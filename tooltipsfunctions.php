@@ -85,7 +85,7 @@ function editTooltips()
 
 <div style='margin:10px 5px;'>
 <div style='float:left;margin-right:10px;'>
-<img src='<?php echo get_option('siteurl');  ?>/wp-content/plugins/tooltips/images/new.png' style='width:30px;height:30px;'>
+<img src='<?php echo get_option('siteurl');  ?>/wp-content/plugins/wordpress-tooltips/images/new.png' style='width:30px;height:30px;'>
 </div> 
 <div style='padding-top:5px; font-size:22px;'> <i></>Add/Edit Tooltips</i></div>
 </div>

@@ -3,9 +3,9 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips
-Version: 1.0.1
+Version: 1.0.2
 Author: Tomas Zhu
-Author URI: 
+Author URI: http://tomas.zhu.bz
 */
 
 require_once("tooltipsfunctions.php");
@@ -17,11 +17,11 @@ function tooltipsHead()
  	<script type="text/javascript">	
 	if(typeof jQuery=='undefined')
 	{
-		document.write('<'+'script src="<?php echo $m_pluginURL; ?>/<?php echo  '/tooltips'; ?>/js/qtip/jquery-1.3.2.min.js" type="text/javascript"></'+'script>');
+		document.write('<'+'script src="<?php echo $m_pluginURL; ?>/<?php echo  '/wordpress-tooltips'; ?>/js/qtip/jquery-1.3.2.min.js" type="text/javascript"></'+'script>');
 	}
 	</script>
 	
-	<script type="text/javascript" src="<?php echo $m_pluginURL; ?>/<?php echo  "/tooltips" ?>/js/qtip/jquery.qtip-1.0.0-rc3.min.js"></script>
+	<script type="text/javascript" src="<?php echo $m_pluginURL; ?>/<?php echo  "/wordpress-tooltips" ?>/js/qtip/jquery.qtip-1.0.0-rc3.min.js"></script>
 	<script type="text/javascript">
 
 	function toolTips(whichID,theTipContent)
