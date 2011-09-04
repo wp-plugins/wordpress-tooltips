@@ -4,7 +4,7 @@ Author URI: http://tomas.zhu.bz
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
 Tested up to: 2.7
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips,nextgen description will shown as tooltips
 
 == Description ==
@@ -34,11 +34,14 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 
 == Changelog ==
 
-= 1.0.0 =
+= Version 1.0.0 =
 
 * Spell out that the license is GPLv2
 * Finished the first version
 * General code clean up
+
+= Version 1.0.1 =
+* More friendly in back end
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/
