@@ -43,8 +43,14 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 = Version 1.0.1 =
 * More friendly in back end
 
-= Version 1.0.1 =
+= Version 1.0.2 =
 * Fixed problem of "The plugin does not have a valid header."
+
+= Version 1.0.3 =
+* more clear from an English speaking
+
+= Version 1.0.4 =
+* add feature of delete tooltips in backend
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/

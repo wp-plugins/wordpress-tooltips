@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips
-Version: 1.0.2
+Version: 1.0.4
 Author: Tomas Zhu
 Author URI: http://tomas.zhu.bz
 */

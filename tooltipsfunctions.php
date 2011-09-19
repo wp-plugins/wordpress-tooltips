@@ -52,7 +52,7 @@ function editTooltips()
 				
 				update_option('tooltipsarray',$m_tooltipsArray);
 			}
-			tooltipsMessage("Tooltips saved.");
+			tooltipsMessage("Tooltips Added.");
 		}
 		
 
@@ -79,7 +79,18 @@ function editTooltips()
 			}
 			tooltipsMessage("Changes saved.");
 		}
-		
+
+		if (isset($_POST['toolstipskeywordsubmitdelete']))
+		{
+			$m_toolstipskeywordsubmithideen = $wpdb->escape($_POST['toolstipskeywordsubmithideen']);
+
+			{
+				array_splice($m_tooltipsArray,$m_toolstipskeywordsubmithideen,1);
+				update_option('tooltipsarray',$m_tooltipsArray);
+			}
+			tooltipsMessage("Tooltips Deleted.");
+		}
+				
 		echo "<br />";
 		?>
 
@@ -188,10 +199,14 @@ $m_tooltipsArray = get_option('tooltipsarray');
 										<textarea rows="2" cols="35" name='toolstipscontent'><?php echo stripslashes(stripslashes($m_tooltipsNow['content'])); ?></textarea>
 										</td>
 										
-										<td width="15%" style='align:right;text-align:right;padding-right:20px;'>
+										<td width="12%" style='align:right;text-align:right;padding-left:3px;'>
 											<input type="hidden" id="toolstipskeywordsubmithideen" name="toolstipskeywordsubmithideen" value="<?php echo $i; ?>">
-											<input type="submit" id="toolstipskeywordsubmitedit"<?php echo $i; ?> name="toolstipskeywordsubmitedit"<?php echo $i; ?> value="Edit Now">										
+											<input type="submit" class="toolstipskeywordsubmitedit" name="toolstipskeywordsubmitedit" value="Update Now">										
 										</td>
+										
+										<td width="13%" style='align:right;text-align:right;'>
+											<input type="submit" class="toolstipskeywordsubmitdelete" name="toolstipskeywordsubmitdelete" value="Delete Now">										
+										</td>										
 										</tr>
 										</form>
 										<?php
