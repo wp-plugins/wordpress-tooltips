@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips
-Version: 1.0.4
+Version: 1.0.5
 Author: Tomas Zhu
 Author URI: http://tomas.zhu.bz
 */
@@ -130,7 +130,18 @@ function nextgenTooltips()
 {
 ?>
 <script type="text/javascript">
-	jQuery("img").load(function(){if (jQuery(this).parent("a").attr('title') != '' ) {toolTips(jQuery(this).parent("a"),jQuery(this).parent("a").attr('title'))};});
+	jQuery("img").load(function()
+	{
+		if ((jQuery(this).parent("a").attr('title') != '' )  && (jQuery(this).parent("a").attr('title') != undefined ))
+		{
+			/* alert(jQuery(this).parent("a").attr('title')); 
+				fixed the bug of if a img have no description in nextgallery and we still show the popup windows
+			*/
+			toolTips(jQuery(this).parent("a"),jQuery(this).parent("a").attr('title'))
+		};
+	}
+
+	);
 </script>
 <?php
 }

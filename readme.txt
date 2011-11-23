@@ -3,7 +3,7 @@ Contributors: Tomas.zhu
 Author URI: http://tomas.zhu.bz
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
-Tested up to: 2.7
+Tested up to: 3.2.1
 
 you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips,nextgen description will shown as tooltips
 
@@ -51,6 +51,9 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 
 = Version 1.0.4 =
 * add feature of delete tooltips in backend
+
+= Version 1.0.4 =
+* fixed the bug of if a img have no description in nextgallery and we still show the popup windows
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/
