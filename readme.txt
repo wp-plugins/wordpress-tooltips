@@ -52,7 +52,7 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 = Version 1.0.4 =
 * add feature of delete tooltips in backend
 
-= Version 1.0.4 =
+= Version 1.0.5 =
 * fixed the bug of if a img have no description in nextgallery and we still show the popup windows
 
 == Download ==
