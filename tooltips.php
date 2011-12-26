@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips
-Version: 1.0.5
+Version: 1.0.6
 Author: Tomas Zhu
 Author URI: http://tomas.zhu.bz
 */
@@ -137,8 +137,18 @@ function nextgenTooltips()
 			/* alert(jQuery(this).parent("a").attr('title')); 
 				fixed the bug of if a img have no description in nextgallery and we still show the popup windows
 			*/
-			toolTips(jQuery(this).parent("a"),jQuery(this).parent("a").attr('title'))
-		};
+			toolTips(jQuery(this).parent("a"),jQuery(this).parent("a").attr('title'));
+		}
+		else
+		{
+			/*
+			in last version 1.0.5, if we want to add tooltips for a image, we need setting link title in advanced
+			setting -- when upload a image, it need 2 steps, from version 1.0.6, we just read image alt as image 
+			tooltips, so webmaster just need one step to add tooltips.
+			*/
+			toolTips(jQuery(this),jQuery(this).attr('alt'));
+		}
+		
 	}
 
 	);

@@ -55,5 +55,10 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 = Version 1.0.5 =
 * fixed the bug of if a img have no description in nextgallery and we still show the popup windows
 
+= Version 1.0.6 =
+* Some guys reported that do not know how to add tooltips for images, in old version it need 2 steps, not we can just use title of the image as tooltips, so users can 
+only setting it one time when upload an image on wordpress editor panel
+
+
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/
