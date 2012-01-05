@@ -3,7 +3,7 @@ Contributors: Tomas.zhu
 Author URI: http://tomas.zhu.bz
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
-Tested up to: 3.2.1
+Tested up to: 3.3.1
 
 you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips,nextgen description will shown as tooltips
 
@@ -59,6 +59,8 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 * Some guys reported that do not know how to add tooltips for images, in old version it need 2 steps, not we can just use title of the image as tooltips, so users can 
 only setting it one time when upload an image on wordpress editor panel
 
+= Version 1.0.7 =
+Fixed the bug of show empty tooltips box for a image which not added alt 
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/

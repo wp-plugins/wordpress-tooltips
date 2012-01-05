@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips
-Version: 1.0.6
+Version: 1.0.7
 Author: Tomas Zhu
 Author URI: http://tomas.zhu.bz
 */
@@ -146,9 +146,17 @@ function nextgenTooltips()
 			setting -- when upload a image, it need 2 steps, from version 1.0.6, we just read image alt as image 
 			tooltips, so webmaster just need one step to add tooltips.
 			*/
-			toolTips(jQuery(this),jQuery(this).attr('alt'));
+			var tempAlt = jQuery(this).attr('alt');
+			
+			if (tempAlt == '')
+			{
+				
+			}
+			else
+			{
+				toolTips(jQuery(this),jQuery(this).attr('alt'));
+			}
 		}
-		
 	}
 
 	);
