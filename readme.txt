@@ -62,5 +62,8 @@ only setting it one time when upload an image on wordpress editor panel
 = Version 1.0.7 =
 Fixed the bug of show empty tooltips box for a image which not added alt 
 
+= Version 1.0.8 =
+Fixed the bug: if some guy just add " " in alt, our tooltips will popup but show an empty window, now all space will be repalced with null, so there will have no space tooltips window now.
+
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/
