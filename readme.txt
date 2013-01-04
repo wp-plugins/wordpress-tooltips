@@ -3,7 +3,7 @@ Contributors: Tomas.zhu
 Author URI: http://tomas.zhu.bz
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
-Tested up to: 3.3.1
+Tested up to: 3.5
 
 you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips,nextgen description will shown as tooltips
 
@@ -64,6 +64,9 @@ Fixed the bug of show empty tooltips box for a image which not added alt
 
 = Version 1.0.8 =
 Fixed the bug: if some guy just add " " in alt, our tooltips will popup but show an empty window, now all space will be repalced with null, so there will have no space tooltips window now.
+
+= Version 1.0.8 =
+According to users opinion, we rewrite the UI of tooltips keyword and content input area to make the size more larger so it is more easier to use.
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/

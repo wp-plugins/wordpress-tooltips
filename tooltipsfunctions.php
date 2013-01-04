@@ -119,17 +119,19 @@ function editTooltips()
 										<table id="toolstipstable" width="100%">
 
 										<tr>
-										<td width="10%">
-										Keyword:
-										</td>
-										<td width="20%">
-										<input type="text" id="toolstipskeyword" name="toolstipskeyword" value="">
-										</td>
-										<td width="10%">
-										Content:
-										</td>
-										<td width="40%">
-										<textarea rows="2" cols="40" name='toolstipscontent'></textarea>
+										<td width="100%">
+										Please input your keyword/sentence of the tooltip:
+										<br />
+										<br />										
+										<input type="text" id="toolstipskeyword" name="toolstipskeyword" value=""  style="width:600px;">
+										<br />
+										<br />
+										<br />
+										<br />
+										Please input content/tips/image/video of the tooltip <i><font color="Gray">(HTML tag supported)</font></i>:
+										<br />
+										<br />
+										<textarea style="width:600px;" rows="2" cols="40" name='toolstipscontent'></textarea>
 										
 										</td>
 										</tr>
