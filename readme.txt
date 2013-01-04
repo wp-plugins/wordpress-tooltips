@@ -17,6 +17,31 @@ You can add text, image, link, video, radio in tooltips, it can be used as a glo
 You can manage all keyword/content centrally in one admin panel easily and quickly. Just input keyword in keyword field and video/rideo/text/image/link in content field, everything will be o.k, for next-gen users,
 you do not need to do anything, tooltips plugin will detected next-gen description and show it as a tooltips when hovering your next-gen images.
 
+More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a>  now.
+
+Features of Wordpress Tooltips Pro:
+
+<li>Multi language/UTF8 supported: supports any alphabets/language.</li>
+<li>7 preset stylesheet and beautiful color schemes: White, Blue, Light, Dark, Red, Cream, Green.</li>
+<li>Customize tooltip box: You can customization whole stylesheet in customization panel or css file easily, you can set any color, opacity, width, show method, hidden method¡­  for tooltip box.</li>
+<li>Multi trigger method: You can select show/hidden your tooltips when:  Mouse Over, Double Click, Click,  Mouse Leave,  Mouse Enter,  Mouse Out,  Mouse Move,  Mouse Up,  Mouse Down.</li>
+<li>Multi positioning options: bottomRight, bottomLeft, topRight, topLeft, topMiddle, bottomMiddle, rightMiddle, leftMiddle
+Automatic positioning: tooltip position is calculated automatically.</li>
+<li>Unlimited number of tooltips.</li>
+<li>Multi browsers supported: Internet Explorer 7+, Firefox 3+, Google Chrome 4+, Opera 9+, Safari 4+.</li>
+<li>Easy to install: this is a Dim-witted system,no complex settings on back end,you do not need add any php code in your wp, you do not need to remember or insert any short code in posts, you do not need to change any css code, what you need to do is just active it and it will works well automatically, if you hope more customization features please just click your mouse and everything will be okay.</li>
+<li>Detailed documentation.</li>
+<li>Assign tooltip to keywords: tooltip will be displayed for these keywords.</li>
+<li>User-friendly: pretty dotted keywords will catch your readers eye and keep the style of your site and not harass your readers.</li>
+<li>Mobile devices supported: our tooltip works well on Android, iOS,Tablet and other mobile devices.</li>
+<li>Easy to use: you don¡¯t need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
+<li>Quick load speed:everything is CSS, no image are used.</li>
+<li>Easy to use: Dim-witted system, all things just need 5 seconds, you don¡¯t need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
+<li>Show any content in tooltip  box: video, audio/song, image/photo, advertising, links/text, show tooltips for nextgen gallery,Show tooltips on image,Show tooltips on button¡­</li>
+<li>Any post types and pages supported.</li>
+
+More amazing features are being developed and you can upgrade unlimited.
+
 == Installation ==
 
 1:Upload the Wordpress Tooltips plugin to your blog
