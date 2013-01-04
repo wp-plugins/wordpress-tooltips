@@ -11,6 +11,8 @@ you can use it for word,phrases,link,shortcode.You can add text,image,link,video
 Plugin Name: Wordpress Tooltips<br>
 Plugin Support URI: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/<br>
 
+<p><a href='http://tooltips.org' target='blank'>Upgrade to Pro Version</a></p>
+
 Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that allow you use tooltips for word,phrases,image,links,even shortcode, or next-gen description, wordpress menu..., and so on.
 You can add text, image, link, video, radio in tooltips, it can be used as a glossary too. 
 
@@ -19,11 +21,11 @@ you do not need to do anything, tooltips plugin will detected next-gen descripti
 
 More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a>  now.
 
-Features of Wordpress Tooltips Pro:
+<h4>Features of Wordpress Tooltips Pro:</h4>
 
 <li>Multi language/UTF8 supported: supports any alphabets/language.</li>
 <li>7 preset stylesheet and beautiful color schemes: White, Blue, Light, Dark, Red, Cream, Green.</li>
-<li>Customize tooltip box: You can customization whole stylesheet in customization panel or css file easily, you can set any color, opacity, width, show method, hidden method¡­  for tooltip box.</li>
+<li>Customize tooltip box: You can customization whole stylesheet in customization panel or css file easily, you can set any color, opacity, width, show method, hidden method...  for tooltip box.</li>
 <li>Multi trigger method: You can select show/hidden your tooltips when:  Mouse Over, Double Click, Click,  Mouse Leave,  Mouse Enter,  Mouse Out,  Mouse Move,  Mouse Up,  Mouse Down.</li>
 <li>Multi positioning options: bottomRight, bottomLeft, topRight, topLeft, topMiddle, bottomMiddle, rightMiddle, leftMiddle
 Automatic positioning: tooltip position is calculated automatically.</li>
@@ -34,13 +36,20 @@ Automatic positioning: tooltip position is calculated automatically.</li>
 <li>Assign tooltip to keywords: tooltip will be displayed for these keywords.</li>
 <li>User-friendly: pretty dotted keywords will catch your readers eye and keep the style of your site and not harass your readers.</li>
 <li>Mobile devices supported: our tooltip works well on Android, iOS,Tablet and other mobile devices.</li>
-<li>Easy to use: you don¡¯t need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
+<li>Easy to use: you don't need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
 <li>Quick load speed:everything is CSS, no image are used.</li>
-<li>Easy to use: Dim-witted system, all things just need 5 seconds, you don¡¯t need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
-<li>Show any content in tooltip  box: video, audio/song, image/photo, advertising, links/text, show tooltips for nextgen gallery,Show tooltips on image,Show tooltips on button¡­</li>
+<li>Easy to use: Dim-witted system, all things just need 5 seconds, you don't need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
+<li>Show any content in tooltip  box: video, audio/song, image/photo, advertising, links/text, show tooltips for nextgen gallery,Show tooltips on image,Show tooltips on button...</li>
 <li>Any post types and pages supported.</li>
 
+<h4>Live Demo of Wordpress Tooltips Pro:</h4>
+
+<li><a href='http://tooltips.org/wordpress-image-tooltips-demo/' target='blank'>WordPress Image Tooltips Demo</a></li>
+<li><a href='http://tooltips.org/wordpress-video-tooltips-demo/' target='blank'>WordPress Video Tooltips Demo</a></li>
+<li><a href='http://tooltips.org/wordpress-audio-tooltips-demo/' target='blank'>WordPress Audio Tooltips Demo</a></li>
+
 More amazing features are being developed and you can upgrade unlimited.
+
 
 == Installation ==
 
