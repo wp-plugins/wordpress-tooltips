@@ -49,6 +49,8 @@ Automatic positioning: tooltip position is calculated automatically.</li>
 <li>Easy to use: Dim-witted system, all things just need 5 seconds, you don't need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
 <li>Show any content in tooltip  box: video, audio/song, image/photo, advertising, links/text, show tooltips for nextgen gallery,Show tooltips on image,Show tooltips on button...</li>
 <li>Any post types and pages supported.</li>
+<li>WordPress standard TinyMCE editor: you can use wordpress standard TinyMCE editor to add/edit/delete text, image, song, video and so on</li>
+<li>Detect and fix your error automatically: Our plugin will detect what you filled in the customize style panel, if you forget input ¡°px¡± for the width or ¡°#¡± in your color, our plugin will still works well.</li>
 ...
 
 <h4>Live Demo of Wordpress Tooltips Pro:</h4>
