@@ -25,7 +25,7 @@ More amazing features? Do you want to customize a beautiful style for your toolt
 Everything is super easy, we are focus on a user friendly system and we are focus on user experience, If you want to add/edit/delete tooltips, please log in admin panel, Under "Tooltips" Menu, You can editor/delete all existed tooltips in "All Tooltips" Sub Menu, also you can add new tooltip in "Add New" sub menu.
 You can use wordpress standard TinyMCE editor to add text, image, song, video and so on. 
 We will use the title of the post as the keyword of your tooltips, and use the content of the post as the content of your tooltips, for example: If you use "wordpress" as post title, and use "we love wordpress" as the 
-post content, when users view your post, if your post have the word "wordpress", our plugin will detect the word and add a tooltip on the word "wordpress", user will find the word "wordpress" with a dotted line under it, and when user move over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress".
+post content, when users view your post, if your post have the word "wordpress", our plugin will detect the word and add a tooltip on the word "wordpress", user will find the word "wordpress" with a dotted line under it, and when user mouse over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress".
 
 
 
@@ -49,6 +49,7 @@ Automatic positioning: tooltip position is calculated automatically.</li>
 <li>Easy to use: Dim-witted system, all things just need 5 seconds, you don't need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
 <li>Show any content in tooltip  box: video, audio/song, image/photo, advertising, links/text, show tooltips for nextgen gallery,Show tooltips on image,Show tooltips on button...</li>
 <li>Any post types and pages supported.</li>
+...
 
 <h4>Live Demo of Wordpress Tooltips Pro:</h4>
 
