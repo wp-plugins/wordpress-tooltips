@@ -23,8 +23,9 @@ More amazing features? Do you want to customize a beautiful style for your toolt
 
 <h4>How To Use:</h4>
 Everything is super easy, we are focus on a user friendly system and we are focus on user experience, If you want to add/edit/delete tooltips, please log in admin panel, Under "Tooltips" Menu, You can editor/delete all existed tooltips in "All Tooltips" Sub Menu, also you can add new tooltip in "Add New" sub menu.
-we will use the title of the post as the keyword of your tooltips, and use the content of the post as the content of your tooltips, for example: If you use "wordpress" as post title, and use "we love wordpress" as the 
-post content, when users view your post, they will find the word "wordpress" with a dotted line under it, and when user move over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress".
+You can use wordpress standard TinyMCE editor to add text, image, song, video and so on. 
+We will use the title of the post as the keyword of your tooltips, and use the content of the post as the content of your tooltips, for example: If you use "wordpress" as post title, and use "we love wordpress" as the 
+post content, when users view your post, if your post have the word "wordpress", our plugin will detect the word and add a tooltip on the word "wordpress", user will find the word "wordpress" with a dotted line under it, and when user move over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress".
 
 
 
