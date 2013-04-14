@@ -3,7 +3,7 @@ Contributors: Tomas.zhu
 Author URI: http://tomas.zhu.bz
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
-Tested up to: 3.5
+Tested up to: 3.5.1
 
 you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips,nextgen description will shown as tooltips
 
@@ -20,6 +20,13 @@ You can manage all keyword/content centrally in one admin panel easily and quick
 you do not need to do anything, tooltips plugin will detected next-gen description and show it as a tooltips when hovering your next-gen images.
 
 More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a>  now.
+
+== How To Use ==
+Everything is super easy, we are focus on a user friendly system and we are focus on user experience, If you want to add/edit/delete tooltips, please log in admin panel, Under "Tooltips" Menu, You can editor/delete all existed tooltips in "All Tooltips" Sub Menu, also you can add new tooltip in "Add New" sub menu.
+we will use the title of the post as the keyword of your tooltips, and use the content of the post as the content of your tooltips, for example: If you use "wordpress" as post title, and use "we love wordpress" as the 
+post content, when users view your post, they will find the word "wordpress" with a dotted line under it, and when user move over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress".
+
+
 
 <h4>Features of Wordpress Tooltips Pro:</h4>
 
@@ -55,7 +62,9 @@ More amazing features are being developed and you can upgrade unlimited.
 
 1:Upload the Wordpress Tooltips plugin to your blog
 2:Activate it 
-3:edit keyword and content in tooltips menu
+3:edit keyword and content in tooltips menu, it is very easy, If you want to add/edit/delete tooltips, please log in admin panel, Under "Tooltips" Menu, You can editor/delete all existed tooltips in "All Tooltips" Sub Menu, also you can add new tooltip in "Add New" sub menu.
+we will use the title of the post as the keyword of your tooltips, and use the content of the post as the content of your tooltips, for example: If you use "wordpress" as post title, and use "we love wordpress" as the 
+post content, when users view your post, they will find the word "wordpress" with a dotted line under it, and when user move over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress"
 
 1, 2, 3: You're done!
 
@@ -101,6 +110,10 @@ Fixed the bug: if some guy just add " " in alt, our tooltips will popup but show
 
 = Version 1.0.8 =
 According to users opinion, we rewrite the UI of tooltips keyword and content input area to make the size more larger so it is more easier to use.
+
+= Version 3.0.0 =
+We use standard wordpress TinyMCE editor as our tooltips editor panel, also we store our tooltips as custom post type, so we can use all wordpress editor features, it is more easier to use and manage.
+Also we write the automatic upgrade module, all old tooltips data will be upgrade automatically, no anything needed on user end.
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/

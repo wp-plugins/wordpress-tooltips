@@ -2,8 +2,8 @@
 /*
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
-Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a>  now.
-Version: 1.0.9
+Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
+Version: 3.0.0
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 */
@@ -73,7 +73,8 @@ function showTooltips()
 {
 	global $table_prefix,$wpdb;
 	
-	$m_result = get_option('tooltipsarray');
+	//!!! $m_result = get_option('tooltipsarray');
+	$m_result = tooltips_get_option('tooltipsarray');
 	$m_keyword_result = '';
 	if (!(empty($m_result)))
 	{
@@ -100,7 +101,8 @@ function showTooltips()
 
 function tooltipsInContent($content)
 {
-	$m_result = get_option('tooltipsarray');
+	//!!!$m_result = get_option('tooltipsarray');
+	$m_result = tooltips_get_option('tooltipsarray');
 	if (!(empty($m_result)))
 	{
 		$m_keyword_id = 0;
@@ -164,8 +166,106 @@ function nextgenTooltips()
 <?php
 }
 add_action('the_content','tooltipsInContent');
-add_action('admin_menu', 'tooltipsMenu');
+//add_action('admin_menu', 'tooltipsMenu');
 add_action('wp_head', 'tooltipsHead');
 add_action('wp_footer','showTooltips');
 add_action('wp_footer','nextgenTooltips');
+
+
+
+
+function add_tooltips_post_type() {
+  $labels = array(
+    'name' => __('Tooltips', 'tooltips'),
+    'singular_name' => __('Tooltip', 'tooltips'),
+    'add_new' => __('Add New', 'tooltips'),
+    'add_new_item' => __('Add New Tooltip', 'tooltips'),
+    'edit_item' => __('Edit Tooltip', 'tooltips'),
+    'new_item' => __('New Tooltip', 'tooltips'),
+    'all_items' => __('All Tooltips', 'tooltips'),
+    'view_item' => __('View Tooltip', 'tooltips'),
+    'search_items' => __('Search Tooltip', 'tooltips'),
+    'not_found' =>  __('No Tooltip found', 'tooltips'),
+    'not_found_in_trash' => __('No Tooltip found in Trash', 'tooltips'), 
+    'menu_name' => __('Tooltips', 'tooltips')
+  );
+  
+  $args = array(
+    'labels' => $labels,
+    'public' => false,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    '_builtin' =>  false,
+    'query_var' => "tooltips",
+    'rewrite' => false,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false,
+    'menu_position' => null,
+    'supports' => array( 'title', 'editor','author','custom-fields','thumbnail' )
+  ); 
+  register_post_type('tooltips', $args);
+}
+add_action( 'init', 'add_tooltips_post_type' );
+
+function upgrade_check()
+{
+	//delete_option('ztooltipversion');
+	$currentVersion = get_option('ztooltipversion');
+	// old version
+	if (empty($currentVersion))
+	{
+		$m_result = get_option('tooltipsarray');
+		if (!(empty($m_result)))
+		{
+			$m_keyword_id = 0;
+			foreach ($m_result as $m_single)
+			{
+				$m_keyword = $m_single['keyword'];
+				$m_content = $m_single['content'];				
+				$my_post = array(
+  				//'post_title'    => wp_strip_all_tags( $_POST['post_title'] ),
+  				'post_title'    => $m_keyword,
+  				'post_content'  => $m_content,
+  				'post_status'   => 'publish',
+  				'post_type'   => 'tooltips',
+  				'post_author'   => 1,
+				);
+				wp_insert_post( $my_post );
+			}
+		}
+	
+	}
+	update_option('ztooltipversion','3.0.0');
+}
+add_action( 'init', 'upgrade_check');
+
+function tooltips_get_option($type)
+{
+	$tooltipsarray = array();
+	$m_single = array();
+	if ($type == 'tooltipsarray')
+	{
+		$type = 'tooltips';
+		$args=array(
+  		'post_type' => $type,
+  		'post_status' => 'publish',
+  		'posts_per_page' => -1,
+  		'caller_get_posts'=> 1
+		);
+		$my_query = null;
+		$my_query = new WP_Query($args);
+		if( $my_query->have_posts() ) 
+		{
+  			while ($my_query->have_posts()) : $my_query->the_post();
+  			$m_single = array();
+  			$m_single['keyword'] = get_the_title();
+			$m_single['content'] = get_the_content();
+			$tooltipsarray[] = $m_single;
+  			endwhile;
+		}
+		wp_reset_query();
+	}
+	return $tooltipsarray;
+}
 ?>

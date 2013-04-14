@@ -247,5 +247,4 @@ function tooltipsMessage($p_message)
 
 }
 	
-
 ?>
