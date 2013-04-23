@@ -119,5 +119,8 @@ According to users opinion, we rewrite the UI of tooltips keyword and content in
 We use standard wordpress TinyMCE editor as our tooltips editor panel, also we store our tooltips as custom post type, so we can use all wordpress editor features, it is more easier to use and manage.
 Also we write the automatic upgrade module, all old tooltips data will be upgrade automatically, no anything needed on user end.
 
+= Version 3.0.1 =
+Upgrade to the jquery 1.7.2, support more browser
+
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/
