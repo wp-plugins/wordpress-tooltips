@@ -84,18 +84,20 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 
 == Changelog ==
 
-=Free Version 3.1.1 =
-New "Tooltips Global Settings" sub menu,  allow users select "Keyword Matching Mode"
+= Version 3.1.1 =
+New features for free version 3.1.1: 
+New "Tooltips Global Settings" sub menu,  allow users select "Keyword Matching Mode":
 You can select:
-a: "Add tooltips to the first matching keyword in the same page"
+1. "Add tooltips to the first matching keyword in the same page"
 or
-b: "Add tooltips to all matching keyword in the same page"
+2. "Add tooltips to all matching keyword in the same page"
 
-=Pro Version 3.1.2 =
+= Version 3.1.2 =
+New features for Pro version 3.1.2: 
 1: Add Tooltips To Menu Items
 2: Tooltips Global Settings allow users select "Keyword Matching Mode"
 3: Some tweaks
- 
+
 
 = Version 3.0.1 =
 Upgrade to the jquery 1.7.2, support more browser
