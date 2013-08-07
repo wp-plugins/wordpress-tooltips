@@ -1,4 +1,74 @@
 <?php
+
+
+function tooltipGlobalSettings()
+{
+	if (isset($_POST['onlyFirstKeywordsetting']))
+	{
+		if (isset($_POST['onlyFirstKeyword']))
+		{
+			update_option("onlyFirstKeyword",$_POST['onlyFirstKeyword']);
+		}
+		tooltipsMessage("Changes saved."); //!!!
+	}
+	
+	
+	$onlyFirstKeyword = get_option("onlyFirstKeyword");
+?>
+
+<div class="wrap">
+<div id="icon-options-general" class="icon32"><br></div>
+<h2>Tooltips Global Settings</h2>
+</div>
+<div style='clear:both'></div>		
+		<div class="wrap">
+			<div id="dashboard-widgets-wrap">
+			    <div id="dashboard-widgets" class="metabox-holder">
+					<div id="post-body">
+						<div id="dashboard-widgets-main-content">
+							<div class="postbox-container" style="width:90%;">
+								<div class="postbox">
+									<h3 class='hndle'><span>
+										Tooltip Keyword Matching Mode
+									</span>
+									</h3>
+								
+									<div class="inside" style='padding-left:5px;'>
+										<form id="toolstipsform" name="toolstipsform" action="" method="POST">
+										<table id="toolstipstable" width="100%">
+
+										<tr style="text-align:left;">
+										<td width="20%"  style="text-align:left;">
+										Keyword Matching Mode:
+										</td>
+										<td width="50%"  style="text-align:left;">
+										<select id="onlyFirstKeyword" name="onlyFirstKeyword" style="width:400px;">
+										<option id="firstKeywordSetting" value="all" <?php if ($onlyFirstKeyword == 'all') echo "selected";   ?>> Add tooltips to all matching keyword in the same page </option>
+										<option id="firstKeywordSetting" value="first" <?php if ($onlyFirstKeyword == 'first') echo "selected";   ?>> Add tooltips to the first matching keyword in the same page </option>
+										</select>
+										</td>
+										<td width="30%"  style="text-align:left;">
+										<input type="submit" id="onlyFirstKeywordsetting" name="onlyFirstKeywordsetting" value=" Update Now ">
+										</td>
+										</tr>
+
+										</table>
+										</form>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		<br />
+
+<?php
+}
+
 function editTooltips()
 {
 		

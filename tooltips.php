@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.0.1
+Version: 3.1.1
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 */
@@ -74,6 +74,12 @@ function tooltipsMenu()
 	add_submenu_page('tooltipsfunctions.php',__('Edit Tooltips','Tooltips'), __('Edit Tooltips','Tooltips'),10, 'tooltipsfunctions.php','editTooltips');
 }
 
+add_action('admin_menu', 'tooltips_menu');
+
+function tooltips_menu() {
+	add_submenu_page('edit.php?post_type=tooltips',__('Global Settings','Tooltips'), __('Global Settings','Tooltips'),10, 'tooltipglobalsettings','tooltipGlobalSettings');
+}
+
 function showTooltips()
 {
 	global $table_prefix,$wpdb;
@@ -106,6 +112,12 @@ function showTooltips()
 
 function tooltipsInContent($content)
 {
+	$onlyFirstKeyword = get_option("onlyFirstKeyword");
+	if 	($onlyFirstKeyword == false)
+	{
+		$onlyFirstKeyword = 'all';
+	}
+
 	//!!!$m_result = get_option('tooltipsarray');
 	$m_result = tooltips_get_option('tooltipsarray');
 	if (!(empty($m_result)))
@@ -124,8 +136,16 @@ function tooltipsInContent($content)
 			}
 			else
 			{
-				$content = preg_replace("/(\W)(".$m_keyword.")(?![^<|^\[]*[>|\]])(\W)/is","\\1"."<span class='classtoolTips$m_keyword_id' style='border-bottom:2px dotted #888;'>"."\\2"."</span>"."\\3",$content);
-	
+				//!!! 3.0.1 $content = preg_replace("/(\W)(".$m_keyword.")(?![^<|^\[]*[>|\]])(\W)/is","\\1"."<span class='classtoolTips$m_keyword_id' style='border-bottom:2px dotted #888;'>"."\\2"."</span>"."\\3",$content);
+				if ($onlyFirstKeyword == 'all')
+				{
+					$content = preg_replace("/(\W)(".$m_keyword.")(?![^<|^\[]*[>|\]])(\W)/is","\\1"."<span class='classtoolTips$m_keyword_id' style='border-bottom:2px dotted #888;'>"."\\2"."</span>"."\\3",$content);
+				}
+			
+				if ($onlyFirstKeyword == 'first')
+				{
+					$content = preg_replace("/(\W)(".$m_keyword.")(?![^<|^\[]*[>|\]])(\W)/is","\\1"."<span class='classtoolTips$m_keyword_id' style='border-bottom:2px dotted #888;'>"."\\2"."</span>"."\\3",$content,1);
+				}
 			}
 			$m_keyword_id++;
 		}

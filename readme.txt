@@ -3,9 +3,9 @@ Contributors: Tomas.zhu
 Author URI: http://tomas.zhu.bz
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
-Tested up to: 3.5.1
+Tested up to: 3.6
 
-you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips,nextgen description will shown as tooltips
+you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips, add tooltip in menu items, nextgen description will shown as tooltips
 
 == Description ==
 Plugin Name: Wordpress Tooltips<br>
@@ -13,7 +13,7 @@ Plugin Support URI: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/<br>
 
 <p><a href='http://tooltips.org' target='blank'>Upgrade to Pro Version</a></p>
 
-Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that allow you use tooltips for word,phrases,image,links,even shortcode, or next-gen description, wordpress menu..., and so on.
+Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that allow you use tooltips for word,phrases,image,links,even shortcode, menu items or next-gen description, wordpress menu..., and so on.
 You can add text, image, link, video, radio in tooltips, it can be used as a glossary too. 
 
 You can manage all keyword/content centrally in one admin panel easily and quickly. Just input keyword in keyword field and video/rideo/text/image/link in content field, everything will be o.k, for next-gen users,
@@ -31,10 +31,12 @@ post content, when users view your post, if your post have the word "wordpress",
 
 <h4>Features of Wordpress Tooltips Pro:</h4>
 
+<li>Add tooltip to menu items:You can add tooltips into menu items, sub menu items, please check our menu on http://tooltips.org.</li>
 <li>Multi language/UTF8 supported: supports any alphabets/language.</li>
 <li>7 preset stylesheet and beautiful color schemes: White, Blue, Light, Dark, Red, Cream, Green.</li>
 <li>Customize tooltip box: You can customization whole stylesheet in customization panel or css file easily, you can set any color, opacity, width, show method, hidden method...  for tooltip box.</li>
 <li>Multi trigger method: You can select show/hidden your tooltips when:  Mouse Over, Double Click, Click,  Mouse Leave,  Mouse Enter,  Mouse Out,  Mouse Move,  Mouse Up,  Mouse Down.</li>
+<li>Keyword Matching Mode::you can select "Add tooltips to the first matching keyword in the same page" or "Add tooltips to all matching keyword in the same page".</li>
 <li>Multi positioning options: bottomRight, bottomLeft, topRight, topLeft, topMiddle, bottomMiddle, rightMiddle, leftMiddle
 Automatic positioning: tooltip position is calculated automatically.</li>
 <li>Unlimited number of tooltips.</li>
@@ -81,46 +83,59 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 
 == Changelog ==
 
-= Version 1.0.0 =
+=Free Version 3.1.1 =
+New "Tooltips Global Settings" sub menu,  allow users select "Keyword Matching Mode"
+You can select:
+a: "Add tooltips to the first matching keyword in the same page"
+or
+b: "Add tooltips to all matching keyword in the same page"
 
-* Spell out that the license is GPLv2
-* Finished the first version
-* General code clean up
+=Pro Version 3.1.2 =
+1: Add Tooltips To Menu Items
+2: Tooltips Global Settings allow users select "Keyword Matching Mode"
+3: Some tweaks
+ 
 
-= Version 1.0.1 =
-* More friendly in back end
-
-= Version 1.0.2 =
-* Fixed problem of "The plugin does not have a valid header."
-
-= Version 1.0.3 =
-* more clear from an English speaking
-
-= Version 1.0.4 =
-* add feature of delete tooltips in backend
-
-= Version 1.0.5 =
-* fixed the bug of if a img have no description in nextgallery and we still show the popup windows
-
-= Version 1.0.6 =
-* Some guys reported that do not know how to add tooltips for images, in old version it need 2 steps, not we can just use title of the image as tooltips, so users can 
-only setting it one time when upload an image on wordpress editor panel
-
-= Version 1.0.7 =
-Fixed the bug of show empty tooltips box for a image which not added alt 
-
-= Version 1.0.8 =
-Fixed the bug: if some guy just add " " in alt, our tooltips will popup but show an empty window, now all space will be repalced with null, so there will have no space tooltips window now.
-
-= Version 1.0.8 =
-According to users opinion, we rewrite the UI of tooltips keyword and content input area to make the size more larger so it is more easier to use.
+= Version 3.0.1 =
+Upgrade to the jquery 1.7.2, support more browser
 
 = Version 3.0.0 =
 We use standard wordpress TinyMCE editor as our tooltips editor panel, also we store our tooltips as custom post type, so we can use all wordpress editor features, it is more easier to use and manage.
 Also we write the automatic upgrade module, all old tooltips data will be upgrade automatically, no anything needed on user end.
 
-= Version 3.0.1 =
-Upgrade to the jquery 1.7.2, support more browser
+= Version 1.0.8 =
+According to users opinion, we rewrite the UI of tooltips keyword and content input area to make the size more larger so it is more easier to use.
+
+= Version 1.0.8 =
+Fixed the bug: if some guy just add " " in alt, our tooltips will popup but show an empty window, now all space will be repalced with null, so there will have no space tooltips window now.
+
+= Version 1.0.7 =
+Fixed the bug of show empty tooltips box for a image which not added alt 
+
+= Version 1.0.6 =
+* Some guys reported that do not know how to add tooltips for images, in old version it need 2 steps, not we can just use title of the image as tooltips, so users can 
+only setting it one time when upload an image on wordpress editor panel
+
+= Version 1.0.5 =
+* fixed the bug of if a img have no description in nextgallery and we still show the popup windows
+
+= Version 1.0.4 =
+* add feature of delete tooltips in backend
+
+= Version 1.0.3 =
+* more clear from an English speaking
+
+= Version 1.0.2 =
+* Fixed problem of "The plugin does not have a valid header."
+
+= Version 1.0.1 =
+* More friendly in back end
+
+= Version 1.0.0 =
+
+* Spell out that the license is GPLv2
+* Finished the first version
+* General code clean up
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/
