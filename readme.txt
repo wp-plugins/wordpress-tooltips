@@ -60,6 +60,7 @@ Automatic positioning: tooltip position is calculated automatically.</li>
 <li><a href='http://tooltips.org/wordpress-image-tooltips-demo/' target='blank'>WordPress Image Tooltips Demo</a></li>
 <li><a href='http://tooltips.org/wordpress-video-tooltips-demo/' target='blank'>WordPress Video Tooltips Demo</a></li>
 <li><a href='http://tooltips.org/wordpress-audio-tooltips-demo/' target='blank'>WordPress Audio Tooltips Demo</a></li>
+<li><a href='http://tooltips.org/wordpress-image-tooltips-demo/' target='blank'>WordPress Add Tooltips To Menu Item Demo</a></li>
 
 More amazing features are being developed and you can upgrade unlimited.
 
