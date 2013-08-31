@@ -36,7 +36,9 @@ post content, when users view your post, if your post have the word "wordpress",
 <li>7 preset stylesheet and beautiful color schemes: White, Blue, Light, Dark, Red, Cream, Green.</li>
 <li>Customize tooltip box: You can customization whole stylesheet in customization panel or css file easily, you can set any color, opacity, width, show method, hidden method...  for tooltip box.</li>
 <li>Multi trigger method: You can select show/hidden your tooltips when:  Mouse Over, Double Click, Click,  Mouse Leave,  Mouse Enter,  Mouse Out,  Mouse Move,  Mouse Up,  Mouse Down.</li>
-<li>Keyword Matching Mode::you can select "Add tooltips to the first matching keyword in the same page" or "Add tooltips to all matching keyword in the same page".</li>
+<li>Keyword Matching Mode: You can select "Add tooltips to the first matching keyword in the same page" or "Add tooltips to all matching keyword in the same page".</li>
+<li>Enable/Disable Tooltips For Image Setting: You can enable or disable tooltips for your photos in control panel</li>
+<li>Tooltips For Image Keyword Matching Mode: You setting support next-gen gallery mode or ALT attribute mode or Title attribute mode or REL attribute mode in control panel</li>
 <li>Multi positioning options: bottomRight, bottomLeft, topRight, topLeft, topMiddle, bottomMiddle, rightMiddle, leftMiddle
 Automatic positioning: tooltip position is calculated automatically.</li>
 <li>Unlimited number of tooltips.</li>
@@ -83,6 +85,20 @@ post content, when users view your post, they will find the word "wordpress" wit
 FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 
 == Changelog ==
+
+= Version 3.2.1 =
+New features for free version 3.2.1: 
+In "Tooltips Global Settings" sub menu, you can "Enable/Disable Tooltips For Image Setting".
+
+= Version 3.2.2 =
+New features for Pro version 3.2.2: 
+In "Tooltips Global Settings" sub menu, you can "Enable/Disable Tooltips For Image Setting".
+In "Tooltips Global Settings" sub menu, you can setting "Tooltips For Image Keyword Matching Mode":
+you will have options:
+1: Setting tooltip for image running as support NEXT-GEN gallery mode 
+2: Use ALT attribute in img tag as conent of tooltips for image 
+3: Use REL attribute in img tag as conent of tooltips for image 
+4: Use Title attribute in imgage link(href) as conent of tooltips for image 
 
 = Version 3.1.1 =
 New features for free version 3.1.1: 

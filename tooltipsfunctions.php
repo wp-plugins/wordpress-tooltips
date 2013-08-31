@@ -14,6 +14,19 @@ function tooltipGlobalSettings()
 	
 	
 	$onlyFirstKeyword = get_option("onlyFirstKeyword");
+	
+	if (isset($_POST['enableTooltipsForImageSubmit']))
+	{
+		if (isset($_POST['enableTooltipsForImage']))
+		{
+			update_option("enableTooltipsForImage",$_POST['enableTooltipsForImage']);
+		}
+		tooltipsMessage("Changes saved."); //!!!
+	}
+	
+	
+	$enableTooltipsForImage = get_option("enableTooltipsForImage");
+	
 ?>
 
 <div class="wrap">
@@ -66,6 +79,53 @@ function tooltipGlobalSettings()
 		<div style="clear:both"></div>
 		<br />
 
+		
+<div style='clear:both'></div>		
+		<div class="wrap">
+			<div id="dashboard-widgets-wrap">
+			    <div id="dashboard-widgets" class="metabox-holder">
+					<div id="post-body">
+						<div id="dashboard-widgets-main-content">
+							<div class="postbox-container" style="width:90%;">
+								<div class="postbox">
+									<h3 class='hndle'><span>
+										Enable/Disable Tooltips For Image Setting<i> <font color='Gray'> (tooltips shown when mouse hover the image)</font></i>
+									</span>
+									</h3>
+								
+									<div class="inside" style='padding-left:5px;'>
+										<form id="toolstipsform" name="toolstipsform" action="" method="POST">
+										<table id="toolstipstable" width="100%">
+
+										<tr style="text-align:left;">
+										<td width="25%"  style="text-align:left;">
+										Enable Tooltips For Image?
+										</td>
+										<td width="50%"  style="text-align:left;">
+										<select id="enableTooltipsForImage" name="enableTooltipsForImage" style="width:400px;">
+										<option id="enableTooltipsForImageOption" value="YES" <?php if ($enableTooltipsForImage == 'YES') echo "selected";   ?>>  I want to enable tooltips for image </option>
+										<option id="enableTooltipsForImageOption" value="NO" <?php if ($enableTooltipsForImage == 'NO') echo "selected";   ?>>   I want to disable tooltips for image </option>
+										</select>
+										</td>
+										<td width="25%"  style="text-align:left;">
+										<input type="submit" id="enableTooltipsForImageSubmit" name="enableTooltipsForImageSubmit" value=" Update Now ">
+										</td>
+										</tr>
+
+										</table>
+										</form>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		<br />
+		
 <?php
 }
 
