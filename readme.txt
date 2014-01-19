@@ -1,9 +1,13 @@
 === Wordpress Tooltips ===
-Contributors: Tomas.zhu
-Author URI: http://tomas.zhu.bz
+Contributors: zhuyi
+Author URI: http://tomas.zhu.bz/
+Donate link: http://tomas.zhu.bz/
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
-Tested up to: 3.6
+Tested up to: 3.8
+Stable tag: 3.2.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips, add tooltip in menu items, nextgen description will shown as tooltips
 
@@ -79,12 +83,19 @@ post content, when users view your post, they will find the word "wordpress" wit
 
 == Screenshots ==
 
-1: Front End 
-2: Back End
+1: Image Tooltips
+2: Text Tooltips
+3: Easy To Add New Tooltips In Back End
+4: Global Setting In Back End
+5: Tooltips Edit/Delete/Update Panel In Back End
+
+
 == Frequently Asked Questions ==
 FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 
 == Changelog ==
+= Version 3.2.3 =
+Allow tooltip box stay open in page before hidden tooltip box, so users can click links in the tooltip box always.
 
 = Version 3.2.1 =
 New features for free version 3.2.1: 
@@ -155,6 +166,10 @@ only setting it one time when upload an image on wordpress editor panel
 * Spell out that the license is GPLv2
 * Finished the first version
 * General code clean up
+
+== Upgrade Notice ==
+= Version 3.2.3 =
+Allow tooltip box stay open in page before hidden tooltip box, so users can click links in the tooltip box always.
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/
