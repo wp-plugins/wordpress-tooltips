@@ -81,16 +81,16 @@ post content, when users view your post, they will find the word "wordpress" wit
 
 1, 2, 3: You're done!
 
-== Screenshots ==
-
-1.Image Tooltips
-2.Text Tooltips
-3.Easy To Add New Tooltips In Back End
-4.Global Setting In Back End
-5.Tooltips Edit/Delete/Update Panel In Back End
-
 == Frequently Asked Questions ==
 FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
+
+== Screenshots ==
+
+1. Image Tooltips
+2. Text Tooltips
+3. Easy To Add New Tooltips In Back End
+4. Global Setting In Back End
+5. Tooltips Edit/Delete/Update Panel In Back End
 
 == Changelog ==
 = Version 3.2.3 =
