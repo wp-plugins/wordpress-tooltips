@@ -84,9 +84,13 @@ post content, when users view your post, they will find the word "wordpress" wit
 == Screenshots ==
 
 1: Image Tooltips
+
 2: Text Tooltips
+
 3: Easy To Add New Tooltips In Back End
+
 4: Global Setting In Back End
+
 5: Tooltips Edit/Delete/Update Panel In Back End
 
 
