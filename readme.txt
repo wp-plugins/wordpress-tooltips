@@ -5,7 +5,7 @@ Donate link: http://tomas.zhu.bz/
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
 Tested up to: 3.8
-Stable tag: 3.2.3
+Stable tag: 3.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -93,6 +93,10 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 5. Tooltips Edit/Delete/Update Panel In Back End
 
 == Changelog ==
+
+= Version 3.2.5 =
+Solve blank line problem in some hosting
+
 = Version 3.2.3 =
 Allow tooltip box stay open in page before hidden tooltip box, so users can click links in the tooltip box always.
 
