@@ -5,7 +5,7 @@ Donate link: http://tomas.zhu.bz/
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
 Requires at least: 2.0
 Tested up to: 3.8
-Stable tag: 3.2.5
+Stable tag: 3.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,6 +94,9 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 
 == Changelog ==
 
+= Version 3.2.7 =
+Only load accurate tooltip from library for the current post so the page size be  reduced and page load speed is faster now.
+
 = Version 3.2.5 =
 Solve blank line problem in some hosting
 
@@ -171,8 +174,8 @@ only setting it one time when upload an image on wordpress editor panel
 * General code clean up
 
 == Upgrade Notice ==
-= Version 3.2.3 =
-Allow tooltip box stay open in page before hidden tooltip box, so users can click links in the tooltip box always.
+= Version 3.2.7 =
+Only load accurate tooltip from library for the current post so the page size be  reduced and page load speed is faster now.
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/

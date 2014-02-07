@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.2.5
+Version: 3.2.7
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 License: GPL2
@@ -98,11 +98,17 @@ function tooltips_menu() {
 	add_submenu_page('edit.php?post_type=tooltips',__('Global Settings','Tooltips'), __('Global Settings','Tooltips'),10, 'tooltipglobalsettings','tooltipGlobalSettings');
 }
 
-function showTooltips()
+function showTooltips($content)
 {
-	global $table_prefix,$wpdb;
+	//global $table_prefix,$wpdb;
+	global $table_prefix,$wpdb,$post;
 	
 	//!!! $m_result = get_option('tooltipsarray');
+	$curent_post = get_post($post);
+	
+	$curent_content = $curent_post->post_content;
+
+	
 	$m_result = tooltips_get_option('tooltipsarray');
 	$m_keyword_result = '';
 	if (!(empty($m_result)))
@@ -110,6 +116,13 @@ function showTooltips()
 		$m_keyword_id = 0;
 		foreach ($m_result as $m_single)
 		{
+			
+					if (stripos($curent_content,$m_single['keyword']) === false)
+					{
+						
+					}
+					else 
+					{			
 			$m_keyword_result .= '<script type="text/javascript">';
 			$m_content = $m_single['content'];
 			$m_content = str_ireplace('\\','',$m_content);
@@ -119,13 +132,17 @@ function showTooltips()
 			{
 				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id','$m_content'); ";
 			}
-			$m_keyword_id++;
+			//$m_keyword_id++;
 			$m_keyword_result .= '</script>';
+					}
+					$m_keyword_id++;
 		}
 
 
 	}
-	echo 	$m_keyword_result;
+	//echo 	$m_keyword_result;
+	$content = $content.$m_keyword_result;
+	return $content;
 }
 
 function tooltipsInContent($content)
@@ -136,7 +153,6 @@ function tooltipsInContent($content)
 		$onlyFirstKeyword = 'all';
 	}
 
-	//!!!$m_result = get_option('tooltipsarray');
 	$m_result = tooltips_get_option('tooltipsarray');
 	if (!(empty($m_result)))
 	{
@@ -211,7 +227,8 @@ function nextgenTooltips()
 add_action('the_content','tooltipsInContent');
 //add_action('admin_menu', 'tooltipsMenu');
 add_action('wp_head', 'tooltipsHead');
-add_action('wp_footer','showTooltips');
+//add_action('wp_footer','showTooltips');
+add_action('the_content','showTooltips');
 //add_action('wp_footer','nextgenTooltips');
 
 $enableTooltipsForImageCheck = get_option("enableTooltipsForImage");
