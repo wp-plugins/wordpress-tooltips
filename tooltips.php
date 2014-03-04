@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.2.9
+Version: 3.3.1
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 License: GPL2
@@ -145,6 +145,53 @@ function showTooltips($content)
 	return $content;
 }
 
+function showTooltipsInTag($content)
+{
+	//global $table_prefix,$wpdb;
+	global $table_prefix,$wpdb,$post;
+	
+	//!!! $m_result = get_option('tooltipsarray');
+	
+	$curent_content = $content;
+
+	
+	$m_result = tooltips_get_option('tooltipsarray');
+	$m_keyword_result = '';
+	if (!(empty($m_result)))
+	{
+		$m_keyword_id = 0;
+		foreach ($m_result as $m_single)
+		{
+			
+					if (stripos($curent_content,$m_single['keyword']) === false)
+					{
+						
+					}
+					else 
+					{			
+			$m_keyword_result .= '<script type="text/javascript">';
+			$m_content = $m_single['content'];
+			$m_content = str_ireplace('\\','',$m_content);
+			$m_content = str_ireplace("'","\'",$m_content);
+			$m_content = preg_replace('|\r\n|', '<br/>', $m_content);
+			if (!(empty($m_content)))
+			{
+				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id','$m_content'); ";
+			}
+			//$m_keyword_id++;
+			$m_keyword_result .= '</script>';
+					}
+					$m_keyword_id++;
+		}
+
+
+	}
+	//echo 	$m_keyword_result;
+	$content = $content.$m_keyword_result;
+	return $content;
+}
+
+
 function tooltipsInContent($content)
 {
 	$onlyFirstKeyword = get_option("onlyFirstKeyword");
@@ -226,11 +273,14 @@ function nextgenTooltips()
 }
 add_action('the_content','tooltipsInContent');
 add_action('the_excerpt','tooltipsInContent');
+add_action('the_tags','tooltipsInContent');
 //add_action('admin_menu', 'tooltipsMenu');
 add_action('wp_head', 'tooltipsHead');
 //add_action('wp_footer','showTooltips');
 add_action('the_content','showTooltips');
 add_action('the_excerpt','showTooltips');
+add_action('the_tags','showTooltipsInTag');
+//add_action('the_title','showTooltips');
 //add_action('wp_footer','nextgenTooltips');
 
 $enableTooltipsForImageCheck = get_option("enableTooltipsForImage");

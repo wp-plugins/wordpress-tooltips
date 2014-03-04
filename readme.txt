@@ -2,14 +2,14 @@
 Contributors: zhuyi
 Author URI: http://tomas.zhu.bz/
 Donate link: http://tomas.zhu.bz/
-Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode
+Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode,tag,tags,menu,excerpt,post
 Requires at least: 2.0
 Tested up to: 3.8.1
 Stable tag: 3.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips, add tooltip in menu items, nextgen description will shown as tooltips
+you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips, add tooltip in menu items, post content excerpt, post tag, nextgen description will shown as tooltips
 
 == Description ==
 Plugin Name: Wordpress Tooltips<br>
@@ -17,7 +17,7 @@ Plugin Support URI: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/<br>
 
 <p><a href='http://tooltips.org' target='blank'>Upgrade to Pro Version</a></p>
 
-Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that allow you use tooltips for word,phrases,image,links,even shortcode, menu items or next-gen description, wordpress menu..., and so on.
+Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that allow you use tooltips for word,phrases,image,links,even post tags, post content, post excerpt, shortcode, menu items or next-gen description, wordpress menu..., and so on.
 You can add text, image, link, video, radio in tooltips, it can be used as a glossary too. 
 
 You can manage all keyword/content centrally in one admin panel easily and quickly. Just input keyword in keyword field and video/rideo/text/image/link in content field, everything will be o.k, for next-gen users,
@@ -93,6 +93,9 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 5. Tooltips Edit/Delete/Update Panel In Back End
 
 == Changelog ==
+= Version 3.3.1 =
+Support show tooltips in post tags now
+
 = Version 3.2.9 =
 support show tooltips in excerpt too.
 
