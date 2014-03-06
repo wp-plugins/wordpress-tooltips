@@ -35,11 +35,6 @@ function tooltipsHead()
  	<script type="text/javascript">	
 	if(typeof jQuery=='undefined')
 	{
-<?php
-/*
-		document.write('<'+'script src="<?php echo $m_pluginURL; ?>/<?php echo  '/wordpress-tooltips'; ?>/js/qtip/jquery-1.3.2.min.js" type="text/javascript"></'+'script>');
-*/
-?>
 		document.write('<'+'script src="<?php echo $m_pluginURL; ?>/<?php echo  '/wordpress-tooltips'; ?>/js/qtip/jquery.js" type="text/javascript"></'+'script>');
 	}
 	</script>
@@ -132,7 +127,6 @@ function showTooltips($content)
 			{
 				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id','$m_content'); ";
 			}
-			//$m_keyword_id++;
 			$m_keyword_result .= '</script>';
 					}
 					$m_keyword_id++;
@@ -140,14 +134,12 @@ function showTooltips($content)
 
 
 	}
-	//echo 	$m_keyword_result;
 	$content = $content.$m_keyword_result;
 	return $content;
 }
 
 function showTooltipsInTag($content)
 {
-	//global $table_prefix,$wpdb;
 	global $table_prefix,$wpdb,$post;
 	
 	//!!! $m_result = get_option('tooltipsarray');
@@ -178,7 +170,6 @@ function showTooltipsInTag($content)
 			{
 				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id','$m_content'); ";
 			}
-			//$m_keyword_id++;
 			$m_keyword_result .= '</script>';
 					}
 					$m_keyword_id++;
@@ -242,18 +233,10 @@ function nextgenTooltips()
 	{
 		if ((jQuery(this).parent("a").attr('title') != '' )  && (jQuery(this).parent("a").attr('title') != undefined ))
 		{
-			/* alert(jQuery(this).parent("a").attr('title')); 
-				fixed the bug of if a img have no description in nextgallery and we still show the popup windows
-			*/
 			toolTips(jQuery(this).parent("a"),jQuery(this).parent("a").attr('title'));
 		}
 		else
 		{
-			/*
-			in last version 1.0.5, if we want to add tooltips for a image, we need setting link title in advanced
-			setting -- when upload a image, it need 2 steps, from version 1.0.6, we just read image alt as image 
-			tooltips, so webmaster just need one step to add tooltips.
-			*/
 			var tempAlt = jQuery(this).attr('alt');
 			tempAlt = tempAlt.replace(' ', '');
 			if (tempAlt == '')
@@ -274,14 +257,11 @@ function nextgenTooltips()
 add_action('the_content','tooltipsInContent');
 add_action('the_excerpt','tooltipsInContent');
 add_action('the_tags','tooltipsInContent');
-//add_action('admin_menu', 'tooltipsMenu');
 add_action('wp_head', 'tooltipsHead');
-//add_action('wp_footer','showTooltips');
 add_action('the_content','showTooltips');
 add_action('the_excerpt','showTooltips');
 add_action('the_tags','showTooltipsInTag');
-//add_action('the_title','showTooltips');
-//add_action('wp_footer','nextgenTooltips');
+
 
 $enableTooltipsForImageCheck = get_option("enableTooltipsForImage");
 if ($enableTooltipsForImageCheck == false)
@@ -330,9 +310,8 @@ add_action( 'init', 'add_tooltips_post_type' );
 
 function upgrade_check()
 {
-	//delete_option('ztooltipversion');
 	$currentVersion = get_option('ztooltipversion');
-	// old version
+
 	if (empty($currentVersion))
 	{
 		$m_result = get_option('tooltipsarray');

@@ -99,7 +99,7 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 
 == Changelog ==
 = Version 3.3.3 =
-Clean javascript codes
+Clean javascript codes and unnecessary codes in previous version
 
 = Version 3.3.2 =
 Pro version which support post show tooltips in post title.
