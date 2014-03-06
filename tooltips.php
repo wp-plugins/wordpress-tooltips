@@ -95,7 +95,6 @@ function tooltips_menu() {
 
 function showTooltips($content)
 {
-	//global $table_prefix,$wpdb;
 	global $table_prefix,$wpdb,$post;
 	
 	//!!! $m_result = get_option('tooltipsarray');
@@ -177,7 +176,6 @@ function showTooltipsInTag($content)
 
 
 	}
-	//echo 	$m_keyword_result;
 	$content = $content.$m_keyword_result;
 	return $content;
 }
