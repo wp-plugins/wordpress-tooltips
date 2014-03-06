@@ -5,11 +5,11 @@ Donate link: http://tomas.zhu.bz/
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode,tag,menu,excerpt,post
 Requires at least: 2.0
 Tested up to: 3.8.1
-Stable tag: 3.3.1
+Stable tag: 3.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-you can use it for word,phrases,link,shortcode.You can add text,image,link,video,radio in tooltips, add tooltip in menu items, post content excerpt, post tag, nextgen description will shown as tooltips
+You can add tooltips in post title/content/excerpt/tags/archive/menu item/gallery..., You can add text,image,link,video,radio in tooltips, ou can use it for word,phrases,link,shortcode.
 
 == Description ==
 Plugin Name: Wordpress Tooltips<br>
@@ -17,11 +17,11 @@ Plugin Support URI: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/<br>
 
 <p><a href='http://tooltips.org' target='blank'>Upgrade to Pro Version</a></p>
 
-Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that allow you use tooltips for word,phrases,image,links,even post tags, post content, post excerpt, shortcode, menu items or next-gen description, wordpress menu..., and so on.
+Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that allow you You can add tooltips in post title/post content/post excerpt/post tags/wordpress archive/wordpress menu items/gallery..., you can use tooltips for word,phrases,image,links,even post tags, post content, post excerpt, shortcode, menu items or next-gen description, wordpress menu..., and so on.
 You can add text, image, link, video, radio in tooltips, it can be used as a glossary too. 
 
 You can manage all keyword/content centrally in one admin panel easily and quickly. Just input keyword in keyword field and video/rideo/text/image/link in content field, everything will be o.k, for next-gen users,
-you do not need to do anything, tooltips plugin will detected next-gen description and show it as a tooltips when hovering your next-gen images.
+you do not need to do anything, tooltips plugin will detected next-gen description and show it as a tooltips when hovering your next-gen images, also you can setting tooltips in Tooltips Global Settings panel.
 
 More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a>  now.
 
@@ -36,6 +36,8 @@ post content, when users view your post, if your post have the word "wordpress",
 <h4>Features of Wordpress Tooltips Pro:</h4>
 
 <li>Add tooltip to menu items:You can add tooltips into menu items, sub menu items, please check our menu on http://tooltips.org.</li>
+<li>Add tooltip in post title/archive: please check demo at http://tooltips.org/add-wordpress-tooltips-in-wordpress-post-title-demo/</li>
+<li>Add tooltip in post content/excerpt/post tags: please check demo at http://tooltips.org/add-wordpress-tooltips-in-wordpress-post-tag/</li>
 <li>Multi language/UTF8 supported: supports any alphabets/language.</li>
 <li>7 preset stylesheet and beautiful color schemes: White, Blue, Light, Dark, Red, Cream, Green.</li>
 <li>Customize tooltip box: You can customization whole stylesheet in customization panel or css file easily, you can set any color, opacity, width, show method, hidden method...  for tooltip box.</li>
@@ -67,6 +69,8 @@ Automatic positioning: tooltip position is calculated automatically.</li>
 <li><a href='http://tooltips.org/wordpress-video-tooltips-demo/' target='blank'>WordPress Video Tooltips Demo</a></li>
 <li><a href='http://tooltips.org/wordpress-audio-tooltips-demo/' target='blank'>WordPress Audio Tooltips Demo</a></li>
 <li><a href='http://tooltips.org/wordpress-image-tooltips-demo/' target='blank'>WordPress Add Tooltips To Menu Item Demo</a></li>
+<li><a href='http://tooltips.org/add-wordpress-tooltips-in-wordpress-post-tag/' target='blank'>WordPress Add Tooltips To Post Tag Demo</a></li>
+<li><a href='http://tooltips.org/add-wordpress-tooltips-in-wordpress-post-title-demo/' target='blank'>WordPress Add Tooltips To Post Title Demo</a></li>
 
 More amazing features are being developed and you can upgrade unlimited.
 
@@ -78,8 +82,9 @@ More amazing features are being developed and you can upgrade unlimited.
 3:edit keyword and content in tooltips menu, it is very easy, If you want to add/edit/delete tooltips, please log in admin panel, Under "Tooltips" Menu, You can editor/delete all existed tooltips in "All Tooltips" Sub Menu, also you can add new tooltip in "Add New" sub menu.
 we will use the title of the post as the keyword of your tooltips, and use the content of the post as the content of your tooltips, for example: If you use "wordpress" as post title, and use "we love wordpress" as the 
 post content, when users view your post, they will find the word "wordpress" with a dotted line under it, and when user move over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress"
+4: You can setting your tooltips in Tooltips Global Settings page at admin area, for example you can choose " Add tooltips to all matching keyword in the same page " or " Add tooltips to the first matching keyword in the same page" and so on
 
-1, 2, 3: You're done!
+1, 2, 3, 4: You're done!
 
 == Frequently Asked Questions ==
 FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
@@ -93,6 +98,12 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 5. Tooltips Edit/Delete/Update Panel In Back End
 
 == Changelog ==
+= Version 3.3.3 =
+Clean javascript codes
+
+= Version 3.3.2 =
+Pro version which support post show tooltips in post title.
+
 = Version 3.3.1 =
 Support show tooltips in post tags now
 
