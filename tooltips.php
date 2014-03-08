@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.3.3
+Version: 3.3.5
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 License: GPL2
@@ -96,6 +96,9 @@ function tooltips_menu() {
 function showTooltips($content)
 {
 	global $table_prefix,$wpdb,$post;
+
+	do_action('action_before_showtooltips', $content);
+	$content = apply_filters( 'filter_before_showtooltips',  $content);
 	
 	//!!! $m_result = get_option('tooltipsarray');
 	$curent_post = get_post($post);
@@ -134,13 +137,17 @@ function showTooltips($content)
 
 	}
 	$content = $content.$m_keyword_result;
+	do_action('action_after_showtooltips', $content);
+	$content = apply_filters( 'filter_after_showtooltips',  $content);
 	return $content;
 }
 
 function showTooltipsInTag($content)
 {
 	global $table_prefix,$wpdb,$post;
-	
+
+	do_action('action_before_showtooltipsintag', $content);
+	$content = apply_filters( 'filter_before_showtooltipsintag',  $content);
 	//!!! $m_result = get_option('tooltipsarray');
 	
 	$curent_content = $content;
@@ -177,12 +184,19 @@ function showTooltipsInTag($content)
 
 	}
 	$content = $content.$m_keyword_result;
+
+	do_action('action_after_showtooltipsintag', $content);
+	$content = apply_filters( 'filter_after_showtooltipsintag',  $content);
+
 	return $content;
 }
 
 
 function tooltipsInContent($content)
 {
+	do_action('action_before_tooltipsincontent', $content);
+	$content = apply_filters( 'filter_before_tooltipsincontent',  $content);
+		
 	$onlyFirstKeyword = get_option("onlyFirstKeyword");
 	if 	($onlyFirstKeyword == false)
 	{
@@ -220,6 +234,10 @@ function tooltipsInContent($content)
 			$m_keyword_id++;
 		}
 	}
+	
+	do_action('action_after_tooltipsincontent', $content);
+	$content = apply_filters( 'filter_after_tooltipsincontent',  $content);
+		
 	return $content;
 }
 

@@ -5,11 +5,11 @@ Donate link: http://tomas.zhu.bz/
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode,tag,menu,excerpt,post
 Requires at least: 2.0
 Tested up to: 3.8.1
-Stable tag: 3.3.3
+Stable tag: 3.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-You can add tooltips in post title/content/excerpt/tags/archive/menu item/gallery..., You can add text,image,link,video,radio in tooltips, ou can use it for word,phrases,link,shortcode.
+Wordpress tooltip appear custom hover box when the user hovers the pointer over an item, You can add tooltips for post title/content/excerpt/tags/archive/menu item/gallery..., You can add text,image,link,video,radio in tooltips, it is quick and pretty. 
 
 == Description ==
 Plugin Name: Wordpress Tooltips<br>
@@ -17,19 +17,23 @@ Plugin Support URI: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/<br>
 
 <p><a href='http://tooltips.org' target='blank'>Upgrade to Pro Version</a></p>
 
-Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that allow you You can add tooltips in post title/post content/post excerpt/post tags/wordpress archive/wordpress menu items/gallery..., you can use tooltips for word,phrases,image,links,even post tags, post content, post excerpt, shortcode, menu items or next-gen description, wordpress menu..., and so on.
-You can add text, image, link, video, radio in tooltips, it can be used as a glossary too. 
+Wordpress Tooltips is a simple & quick & light & powerful jQuery tooltips solution that help you to add tooltips in post title/post content/post excerpt/post tags/wordpress archive/wordpress menu items/gallery... and so on.
+You can add text, image, link, video, radio, mp4 in tooltips, it can be used as a glossary too. 
 
 You can manage all keyword/content centrally in one admin panel easily and quickly. Just input keyword in keyword field and video/rideo/text/image/link in content field, everything will be o.k, for next-gen users,
-you do not need to do anything, tooltips plugin will detected next-gen description and show it as a tooltips when hovering your next-gen images, also you can setting tooltips in Tooltips Global Settings panel.
+you do not need to do anything, tooltips plugin will detected next-gen description and show it as a tooltips when hovering your next-gen images, also our plugin support many other gallery/slideshow plugins too, you can setting tooltips manage options in Tooltips Global Settings panel.
+
+Our tooltips plugin have customization API so it have ability to integrate other amazing themes/plugins/platforms for example wiki, google translate and so on. 
 
 More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a>  now.
 
 <h4>How To Use:</h4>
-Everything is super easy, we are focus on a user friendly system and we are focus on user experience, If you want to add/edit/delete tooltips, please log in admin panel, Under "Tooltips" Menu, You can editor/delete all existed tooltips in "All Tooltips" Sub Menu, also you can add new tooltip in "Add New" sub menu.
-You can use wordpress standard TinyMCE editor to add text, image, song, video and so on. 
-We will use the title of the post as the keyword of your tooltips, and use the content of the post as the content of your tooltips, for example: If you use "wordpress" as post title, and use "we love wordpress" as the 
-post content, when users view your post, if your post have the word "wordpress", our plugin will detect the word and add a tooltip on the word "wordpress", user will find the word "wordpress" with a dotted line under it, and when user mouse over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress".
+Everything is super easy, we are focus on a user friendly system and we are focus on user experience, If you want to add/edit/delete tooltips, please log in admin panel, Under "Tooltips" Menu, You can editor/delete all existed tooltips in "All Tooltips" Sub Menu, you can also add new tooltip in "Add New" sub menu.
+
+You can use wordpress standard TinyMCE editor to add text, image, song, video and so on.
+ 
+We will use the title of the post as the keyword of your tooltips, and use the content of the post as the value of your tooltips, for example: If you input "wordpress" as tooltip title, and use "we love wordpress" as the 
+tooltip content, when users view your post, if there were the word "wordpress" in your post, our plugin will detect this word and add a tooltip on the word "wordpress" automatically, on user side, he will find the word "wordpress" with a dotted line under it, and when user mouse over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress".
 
 
 
@@ -40,27 +44,26 @@ post content, when users view your post, if your post have the word "wordpress",
 <li>Add tooltip in post content/excerpt/post tags: please check demo at http://tooltips.org/add-wordpress-tooltips-in-wordpress-post-tag/</li>
 <li>Multi language/UTF8 supported: supports any alphabets/language.</li>
 <li>7 preset stylesheet and beautiful color schemes: White, Blue, Light, Dark, Red, Cream, Green.</li>
-<li>Customize tooltip box: You can customization whole stylesheet in customization panel or css file easily, you can set any color, opacity, width, show method, hidden method...  for tooltip box.</li>
+<li>Customize tooltip box: You can customize the whole stylesheet in customization panel or css file easily, you can set any color, opacity, width, show method, hidden method... and so on  for tooltip box.</li>
 <li>Multi trigger method: You can select show/hidden your tooltips when:  Mouse Over, Double Click, Click,  Mouse Leave,  Mouse Enter,  Mouse Out,  Mouse Move,  Mouse Up,  Mouse Down.</li>
 <li>Keyword Matching Mode: You can select "Add tooltips to the first matching keyword in the same page" or "Add tooltips to all matching keyword in the same page".</li>
 <li>Enable/Disable Tooltips For Image Setting: You can enable or disable tooltips for your photos in control panel</li>
-<li>Tooltips For Image Keyword Matching Mode: You setting support next-gen gallery mode or ALT attribute mode or Title attribute mode or REL attribute mode in control panel</li>
-<li>Multi positioning options: bottomRight, bottomLeft, topRight, topLeft, topMiddle, bottomMiddle, rightMiddle, leftMiddle
-Automatic positioning: tooltip position is calculated automatically.</li>
+<li>Tooltips For Image Keyword Matching Mode: We support add tooltips for many slideshow/gallery plugins, in back end, you setting gallery/slideshow support mode, for example next-gen gallery mode or ALT attribute mode or Title attribute mode or REL attribute mode in control panel</li>
+<li>Multi positioning options: bottomRight, bottomLeft, topRight, topLeft, topMiddle, bottomMiddle, rightMiddle, leftMiddle, Automatic positioning: tooltip position is calculated automatically.</li>
 <li>Unlimited number of tooltips.</li>
 <li>Multi browsers supported: Internet Explorer 7+, Firefox 3+, Google Chrome 4+, Opera 9+, Safari 4+.</li>
-<li>Easy to install: this is a Dim-witted system,no complex settings on back end,you do not need add any php code in your wp, you do not need to remember or insert any short code in posts, you do not need to change any css code, what you need to do is just active it and it will works well automatically, if you hope more customization features please just click your mouse and everything will be okay.</li>
+<li>Easy to install: this is a Dim-witted system,no complex settings on back end,you do not need to add any php code in your wp, you needn't remember or insert any short code in posts, you do not need to change any css code, what you need to do is just active it and it will works well automatically, if you hope more customization features please just click your mouse and everything will be okay.</li>
 <li>Detailed documentation.</li>
 <li>Assign tooltip to keywords: tooltip will be displayed for these keywords.</li>
 <li>User-friendly: pretty dotted keywords will catch your readers eye and keep the style of your site and not harass your readers.</li>
 <li>Mobile devices supported: our tooltip works well on Android, iOS,Tablet and other mobile devices.</li>
-<li>Easy to use: you don't need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
 <li>Quick load speed:everything is CSS, no image are used.</li>
-<li>Easy to use: Dim-witted system, all things just need 5 seconds, you don't need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
+<li>Easy to use and install: Dim-witted system, all things just need 5 seconds, you don't need to edit older posts because tooltips works automatically,  just input the content in tooltip management page one time and it will works on all articles automatically, this is really cool if you have an older blog with lots of articles.</li>
 <li>Show any content in tooltip  box: video, audio/song, image/photo, advertising, links/text, show tooltips for nextgen gallery,Show tooltips on image,Show tooltips on button...</li>
 <li>Any post types and pages supported.</li>
 <li>WordPress standard TinyMCE editor: you can use wordpress standard TinyMCE editor to add/edit/delete text, image, song, video and so on</li>
-<li>Detect and fix your error automatically: Our plugin will detect what you filled in the customize style panel, for example, if you forget input "px" for the width or "#" in your color, our plugin will still works well.</li>
+<li>Detect and fix your error automatically: Our plugin will detect what you filled in the customize style panel, for example, if you forget input "px" for the width or "#" in your color, WordPress Tooltips would still work well.</li>
+<li>have customization API so it have ability to integrate other amazing themes/plugins/platforms for example wiki, google translate and so on.</li>
 ...
 
 <h4>Live Demo of Wordpress Tooltips Pro:</h4>
@@ -98,6 +101,9 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 5. Tooltips Edit/Delete/Update Panel In Back End
 
 == Changelog ==
+= Version 3.3.5 =
+Expand our plugin for have ability to integrate other amazing themes/plugins/platforms for example wiki
+
 = Version 3.3.3 =
 Clean javascript codes and unnecessary codes in previous version
 
