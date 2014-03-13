@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.3.5
+Version: 3.3.7
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 License: GPL2
@@ -270,6 +270,64 @@ function nextgenTooltips()
 </script>
 <?php
 }
+
+function tooltipsAdminHead()
+{
+?>	
+<style type="text/css">
+span.question, span.questionimage {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  background: #5893ae;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 10px;
+  font-weight: bold;
+}
+span.question:hover { background-color: #21759b; }
+span.questionimage:hover { background-color: #21759b; }
+
+div.tooltip {
+  text-align: left;
+  left: 25px;
+  top: -55px;
+  background: #21759b;
+  color: #fff;
+  position: absolute;
+  z-index: 1000000;
+  width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+}
+div.tooltip:before {
+  border-color: transparent #21759b transparent transparent;
+  border-right: 6px solid #21759b;
+  border-style: solid;
+  border-width: 6px 6px 6px 0px;
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  position: absolute;
+  top: 40%;
+  left: -6px;
+}
+div.tooltip p {
+  margin: 10px;
+  color: #fff;
+}
+</style>										
+<?php
+}										
 add_action('the_content','tooltipsInContent');
 add_action('the_excerpt','tooltipsInContent');
 add_action('the_tags','tooltipsInContent');
@@ -277,6 +335,7 @@ add_action('wp_head', 'tooltipsHead');
 add_action('the_content','showTooltips');
 add_action('the_excerpt','showTooltips');
 add_action('the_tags','showTooltipsInTag');
+add_action('admin_head', 'tooltipsAdminHead');
 
 
 $enableTooltipsForImageCheck = get_option("enableTooltipsForImage");

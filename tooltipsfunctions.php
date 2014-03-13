@@ -51,8 +51,18 @@ function tooltipGlobalSettings()
 										<table id="toolstipstable" width="100%">
 
 										<tr style="text-align:left;">
-										<td width="20%"  style="text-align:left;">
-										Keyword Matching Mode:
+										
+										<td width="25%"  style="text-align:left;">
+										<script type="text/javascript"> 
+										jQuery(document).ready(function () {
+										  jQuery("span.question").hover(function () {
+										    jQuery(this).append('<div class="tooltip"><p>The option --  "Add tooltips to all matching keyword in the same page" means if you have many words which have tooltip content, all these words will show tooltip in the same page.</p><p>The option --  " Add tooltips to the first matching keyword in the same page" means if you have many words which have tooltip content, only the first matching word will show tooltip in the same page.</p></div>');
+										  }, function () {
+										    jQuery("div.tooltip").remove();
+										  });
+										});
+										</script>
+										Keyword Matching Mode: <span class="question">?</span>
 										</td>
 										<td width="50%"  style="text-align:left;">
 										<select id="onlyFirstKeyword" name="onlyFirstKeyword" style="width:400px;">
@@ -60,7 +70,7 @@ function tooltipGlobalSettings()
 										<option id="firstKeywordSetting" value="first" <?php if ($onlyFirstKeyword == 'first') echo "selected";   ?>> Add tooltips to the first matching keyword in the same page </option>
 										</select>
 										</td>
-										<td width="30%"  style="text-align:left;">
+										<td width="25%"  style="text-align:left;">
 										<input type="submit" id="onlyFirstKeywordsetting" name="onlyFirstKeywordsetting" value=" Update Now ">
 										</td>
 										</tr>
@@ -99,7 +109,16 @@ function tooltipGlobalSettings()
 
 										<tr style="text-align:left;">
 										<td width="25%"  style="text-align:left;">
-										Enable Tooltips For Image?
+										<script type="text/javascript"> 
+										jQuery(document).ready(function () {
+										  jQuery("span.questionimage").hover(function () {
+										    jQuery(this).append('<div class="tooltip"><p>The option --  "I want to enable tooltips for image" means if you hover a image, the text in alt attribute will show as the tooltip content.</p><p>The option --  "    I want to disable tooltips for image " means if you hover a image, the tooltip box will not be shown.</p></div>');
+										  }, function () {
+										    jQuery("div.tooltip").remove();
+										  });
+										});
+										</script>										
+										Enable Image Tooltips: <span class="questionimage">?</span>
 										</td>
 										<td width="50%"  style="text-align:left;">
 										<select id="enableTooltipsForImage" name="enableTooltipsForImage" style="width:400px;">

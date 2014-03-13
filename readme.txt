@@ -5,7 +5,7 @@ Donate link: http://tomas.zhu.bz/
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode,tag,menu,excerpt,post
 Requires at least: 2.0
 Tested up to: 3.8.1
-Stable tag: 3.3.5
+Stable tag: 3.3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,8 @@ You can use wordpress standard TinyMCE editor to add text, image, song, video an
  
 We will use the title of the post as the keyword of your tooltips, and use the content of the post as the value of your tooltips, for example: If you input "wordpress" as tooltip title, and use "we love wordpress" as the 
 tooltip content, when users view your post, if there were the word "wordpress" in your post, our plugin will detect this word and add a tooltip on the word "wordpress" automatically, on user side, he will find the word "wordpress" with a dotted line under it, and when user mouse over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress".
+
+We also added guide tips for each setting option, when you hover the question mark of a setting option, a text description will be shown to tell you the usage of this option
 
 
 
@@ -101,6 +103,11 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 5. Tooltips Edit/Delete/Update Panel In Back End
 
 == Changelog ==
+= Version 3.3.7 =
+Add tips in setting option page, so when you setting tooltips in admin area, you will get guide for each setting option
+you can find new guide tips at http://yourdomain.com/wp-admin/edit.php?post_type=tooltips&page=tooltipglobalsettings
+Have fun. :)
+
 = Version 3.3.5 =
 Expand our plugin for have ability to integrate other amazing themes/plugins/platforms for example wiki
 
