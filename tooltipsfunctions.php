@@ -23,9 +23,19 @@ function tooltipGlobalSettings()
 		}
 		tooltipsMessage("Changes saved."); //!!!
 	}
-	
-	
+
 	$enableTooltipsForImage = get_option("enableTooltipsForImage");
+	// 2014-03 3.3.9
+	if (isset($_POST['enableTooltipsForExcerptSubmit']))
+	{
+		if (isset($_POST['enableTooltipsForExcerpt']))
+		{
+			update_option("enableTooltipsForExcerpt",$_POST['enableTooltipsForExcerpt']);
+		}
+		tooltipsMessage("Changes saved."); //!!!
+	}
+	$enableTooltipsForExcerpt = get_option("enableTooltipsForExcerpt");
+	if (empty($enableTooltipsForExcerpt)) $enableTooltipsForExcerpt = 'NO';
 	
 ?>
 
@@ -144,7 +154,65 @@ function tooltipGlobalSettings()
 		</div>
 		<div style="clear:both"></div>
 		<br />
-		
+<?php
+// 2014-03 3.3.9
+?>
+<div style='clear:both'></div>		
+		<div class="wrap">
+			<div id="dashboard-widgets-wrap">
+			    <div id="dashboard-widgets" class="metabox-holder">
+					<div id="post-body">
+						<div id="dashboard-widgets-main-content">
+							<div class="postbox-container" style="width:90%;">
+								<div class="postbox">
+									<h3 class='hndle'><span>
+										Enable/Disable Tooltips For Post Excerpt<i> <font color='Gray'></font></i>
+									</span>
+									</h3>
+								
+									<div class="inside" style='padding-left:5px;'>
+										<form id="toolstipsform" name="toolstipsform" action="" method="POST">
+										<table id="toolstipstable" width="100%">
+
+										<tr style="text-align:left;">
+										<td width="25%"  style="text-align:left;">
+										<script type="text/javascript"> 
+										jQuery(document).ready(function () {
+										  jQuery("span.questionimage").hover(function () {
+										    jQuery(this).append('<div class="tooltip"><p>The option --  "Enable Tooltips For Post Excerpt" means show tooltips in your post excerpt</p><p>The option --  "    Disable Tooltips For Post Excerpt " means do not show tooltips in your post excerpt</p><p>This option is helpful for some advance themes</p></div>');
+										  }, function () {
+										    jQuery("div.tooltip").remove();
+										  });
+										});
+										</script>										
+										Tooltips For Excerpt: <span class="questionimage">?</span>
+										</td>
+										<td width="50%"  style="text-align:left;">
+										<select id="enableTooltipsForExcerpt" name="enableTooltipsForExcerpt" style="width:400px;">
+										<option id="enableTooltipsForExcerptOption" value="YES" <?php if ($enableTooltipsForExcerpt == 'YES') echo "selected";   ?>> Enable Tooltips For Post Excerpt </option>
+										<option id="enableTooltipsForExcerptOption" value="NO" <?php if ($enableTooltipsForExcerpt == 'NO') echo "selected";   ?>>   Disable Tooltips For Post Excerpt </option>
+										</select>
+										</td>
+										<td width="25%"  style="text-align:left;">
+										<input type="submit" id="enableTooltipsForExcerptSubmit" name="enableTooltipsForExcerptSubmit" value=" Update Now ">
+										</td>
+										</tr>
+
+										</table>
+										</form>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		<br />
+
+
 <?php
 }
 
