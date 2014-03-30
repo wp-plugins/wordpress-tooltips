@@ -103,6 +103,11 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 5. Tooltips Edit/Delete/Update Panel In Back End
 
 == Changelog ==
+= Version 3.4.1 =
+Add new setting option in setting option page.
+you can select Enable/Disable Tooltips for post tags in your setting option.
+Tweak tooltip in admin area
+
 = Version 3.3.9 =
 Add new setting option in setting option page.
 you can select Enable/Disable Tooltips For Post Excerpt in your setting option, this is helpful in some advance themes.
