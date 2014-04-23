@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.4.1
+Version: 3.4.3
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 License: GPL2
@@ -462,4 +462,70 @@ if ($enableTooltipsForImageCheck == false)
 {
 	update_option("enableTooltipsForImage", "YES");
 }
+
+// version 3.4.3
+function showTooltipsInShorcode($content)
+{
+	global $table_prefix,$wpdb,$post;
+
+	do_action('action_before_showtooltips', $content);
+	$content = apply_filters( 'filter_before_showtooltips',  $content);
+	
+
+	$curent_content = $content;
+
+	
+	$m_result = tooltips_get_option('tooltipsarray');
+	$m_keyword_result = '';
+	if (!(empty($m_result)))
+	{
+		$m_keyword_id = 0;
+		foreach ($m_result as $m_single)
+		{
+			
+					if (stripos($curent_content,$m_single['keyword']) === false)
+					{
+						
+					}
+					else 
+					{			
+			$m_keyword_result .= '<script type="text/javascript">';
+			$m_content = $m_single['content'];
+			$m_content = str_ireplace('\\','',$m_content);
+			$m_content = str_ireplace("'","\'",$m_content);
+			$m_content = preg_replace('|\r\n|', '<br/>', $m_content);
+			if (!(empty($m_content)))
+			{
+				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id','$m_content'); ";
+			}
+			$m_keyword_result .= '</script>';
+					}
+					$m_keyword_id++;
+		}
+
+
+	}
+	$content = $content.$m_keyword_result;
+	do_action('action_after_showtooltips', $content);
+	$content = apply_filters( 'filter_after_showtooltips',  $content);
+	return $content;
+}
+// version 3.4.3
+function tooltips_list_shortcode($atts)
+{
+	global $table_prefix,$wpdb,$post;
+
+	$args = array( 'post_type' => 'tooltips', 'post_status' => 'public' );
+	$loop = new WP_Query( $args );
+	$return_content = '';
+	while ( $loop->have_posts() ) : $loop->the_post();
+		$return_content .= '<div class="tooltips_list">'.get_the_title().'</div>';
+	endwhile;
+	$return_content = tooltipsInContent($return_content);
+	$return_content = showTooltipsInShorcode($return_content);
+
+	return $return_content;
+}
+// version 3.4.3
+add_shortcode( 'tooltipslist', 'tooltips_list_shortcode' );
 ?>
