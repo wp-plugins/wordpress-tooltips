@@ -37,8 +37,9 @@ tooltip content, when users view your post, if there were the word "wordpress" i
 
 We also added guide tips for each setting option, when you hover the question mark of a setting option, a text description will be shown to tell you the usage of this option.
 
-Since version 3.4.3 we support tooltips shortcode, copy [tooltipslist] in your page or post, we will show all tooltips as a list, if you want a pretty style, you can customize the class '.tooltips_list' in your css file
+Since version 3.4.3 we support tooltips shortcode, copy [tooltipslist] in your page or post, we will show all tooltips as a list
 
+Since version 3.4.5 we developed our original jQuery plugin which allow use shortcode [tooltipslist] as a glossary.
 
 <h4>Features of Wordpress Tooltips Pro:</h4>
 
@@ -102,8 +103,12 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 3. Easy To Add New Tooltips In Back End
 4. Global Setting In Back End
 5. Tooltips Edit/Delete/Update Panel In Back End
+6. Shortcode [tooltipslist] Suport Glossary.
 
 == Changelog ==
+= Version 3.4.5 =
+Since version 3.4.5 we developed our original jQuery plugin which allow use shortcode [tooltipslist] to support a glossary.
+
 = Version 3.4.3 =
 Added the shorcode [tooltipslist] to show all tooltips in a list, any suggestion or feature request is welcome. :)
 

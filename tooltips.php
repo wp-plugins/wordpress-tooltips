@@ -3,7 +3,7 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.4.3
+Version: 3.4.5
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 License: GPL2
@@ -32,6 +32,9 @@ function tooltipsHead()
 	$m_pluginURL = get_option('siteurl').'/wp-content/plugins';
 
 ?>
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $m_pluginURL; ?>/<?php echo  "/wordpress-tooltips" ?>/js/jdirectory/directory.css" title="green" />
+
+
  	<script type="text/javascript">	
 	if(typeof jQuery=='undefined')
 	{
@@ -40,6 +43,7 @@ function tooltipsHead()
 	</script>
 	
 	<script type="text/javascript" src="<?php echo $m_pluginURL; ?>/<?php echo  "/wordpress-tooltips" ?>/js/qtip/jquery.qtip-1.0.0-rc3.min.js"></script>
+	<script type="text/javascript" src="<?php echo $m_pluginURL; ?>/<?php echo  "/wordpress-tooltips" ?>/js/jdirectory/jquery.directory.js"></script>
 	<script type="text/javascript">
 
 	function toolTips(whichID,theTipContent)
@@ -518,14 +522,28 @@ function tooltips_list_shortcode($atts)
 	$args = array( 'post_type' => 'tooltips', 'post_status' => 'public' );
 	$loop = new WP_Query( $args );
 	$return_content = '';
+	$return_content .= '<div class="tooltips_directory">';
 	while ( $loop->have_posts() ) : $loop->the_post();
 		$return_content .= '<div class="tooltips_list">'.get_the_title().'</div>';
 	endwhile;
 	$return_content = tooltipsInContent($return_content);
 	$return_content = showTooltipsInShorcode($return_content);
 
+	$return_content .= '</div>';
+	
 	return $return_content;
 }
 // version 3.4.3
 add_shortcode( 'tooltipslist', 'tooltips_list_shortcode' );
+
+function footernav()
+{
+	//version 3.4.5
+?>
+<script type="text/javascript">
+jQuery('.tooltips_directory').directory();
+</script>
+<?php
+}
+add_action('wp_footer','footernav');
 ?>
