@@ -521,6 +521,87 @@ $m_tooltipsArray = get_option('tooltipsarray');
 		}				
 }
 	
+
+//2014-08 3.4.7 add tooltips widget functionality
+function TooltipsWidgetInit()
+{	
+	register_sidebar_widget('Tooltips', tooltipsSidebar);
+	register_widget_control('Tooltips', tooltipsControl, 300, 200);
+}
+
+function tooltipsControl()
+{
+	global $wpdb,$table_prefix,$g_content;
+    $options = get_option('titleTooltipsControl');
+
+    if (empty($options))
+    {
+    	$m_title = '';
+    }
+    else 
+    {
+		$m_title = $options;
+    }
+    echo $m_title;
+    if ($_POST['HiddenTooltipsControl']) 
+    {
+		update_option('titleTooltipsControl',$wpdb->escape($_POST['HiddenTooltipsControl']));
+    }
+
+    echo '<div style="width:250px">';
+    echo 'Input Title Here:';
+    echo '<br />';
+    echo '<input  type="text" id="HiddenTooltipsControl" name="HiddenTooltipsControl" value="'.$m_title.'" style="margin:5px 5px;width:200px" />';
+	echo '</div>';
+}
+
+
+function tooltipsSidebar($argssidebarsidebar = null)
+{
+	global $wpdb,$table_prefix,$g_content;
+	$before_widget = '';
+	$after_widget = '';
+	if (!empty($argssidebar))
+	{
+		extract($argssidebar);
+	}
+
+    $options = get_option('titleTooltipsControl');
+
+    if (empty($options))
+    {
+    	$m_title = '';
+    }
+    else 
+    {
+		$m_title = $options;
+    }
+    
+    
+    echo $before_widget;
+    echo '<div class="sidebarTooltips">';
+    if (!empty($m_title))
+    {
+    	echo "<h1>" . $m_title . "</h1>";
+    }
+
+	global $table_prefix,$wpdb,$post;
+
+	$args = array( 'post_type' => 'tooltips', 'post_status' => 'public' );
+	$loop = new WP_Query( $args );
+	$return_content = '';
+	$return_content .= '<div class="tooltips_widget">';
+	while ( $loop->have_posts() ) : $loop->the_post();
+		$return_content .= '<div class="tooltips_list">'.get_the_title().'</div>';
+	endwhile;
+	$return_content = tooltipsInContent($return_content);
+	$return_content = showTooltipsInShorcode($return_content);
+
+	$return_content .= '</div>';
+    echo "</div>";
+	echo $return_content;
+}
+
 function tooltipsMessage($p_message)
 {
 

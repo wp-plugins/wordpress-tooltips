@@ -4,8 +4,8 @@ Author URI: http://tomas.zhu.bz/
 Donate link: http://tomas.zhu.bz/
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode,tag,menu,excerpt,post
 Requires at least: 2.0
-Tested up to: 3.9.1
-Stable tag: 3.4.5
+Tested up to: 3.9.2
+Stable tag: 3.4.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,8 @@ you do not need to do anything, tooltips plugin will detected next-gen descripti
 
 Our tooltips plugin have customization API so it have ability to integrate other amazing themes/plugins/platforms for example wiki, google translate and so on. 
 
+Also you can add tooltips widget on the sidebar, you can show all tooltips in one page, or you can use shortcode our tooltips as a glossary..., just a test you will find our plugin is easy to use and user friendly, you are welcome to request new requirement/features. :)
+
 More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a>  now.
 
 <h4>How To Use:</h4>
@@ -40,6 +42,8 @@ We also added guide tips for each setting option, when you hover the question ma
 Since version 3.4.3 we support tooltips shortcode, copy [tooltipslist] in your page or post, we will show all tooltips as a list
 
 Since version 3.4.5 we developed our original jQuery plugin which allow use shortcode [tooltipslist] as a glossary.
+
+Since version 3.4.7 users can add tooltips widget on the sidebar. :)
 
 <h4>Features of Wordpress Tooltips Pro:</h4>
 
@@ -104,8 +108,12 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 4. Global Setting In Back End
 5. Tooltips Edit/Delete/Update Panel In Back End
 6. Shortcode [tooltipslist] Suport Glossary.
+7. Tooltips Widget On Sidebar
 
 == Changelog ==
+= Version 3.4.7 =
+In this version we can add tooltips widget to the sidebar. :)
+
 = Version 3.4.5 =
 Since version 3.4.5 we developed our original jQuery plugin which allow use shortcode [tooltipslist] to support a glossary.
 
