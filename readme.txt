@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Wordpress tooltip appear custom hover box when the user hovers the pointer over an item, You can add tooltips for post title/content/excerpt/tags/archive/menu item/gallery..., You can add text,image,link,video,radio in tooltips, it is quick and pretty. 
 
 == Description ==
-Plugin Name: Wordpress Tooltips<br>
+Plugin Name: Wordpress Tooltips, works well on wordpress 4.0<br>
 Plugin Support URI: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/<br>
 
 <p><a href='http://tooltips.org' target='blank'>Upgrade to Pro Version</a></p>
