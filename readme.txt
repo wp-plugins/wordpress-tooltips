@@ -4,7 +4,7 @@ Author URI: http://tomas.zhu.bz/
 Donate link: http://tomas.zhu.bz/
 Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode,tag,menu,excerpt,post
 Requires at least: 2.0
-Tested up to: 3.9.2
+Tested up to: 4.0
 Stable tag: 3.4.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
