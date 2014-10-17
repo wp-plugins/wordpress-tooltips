@@ -9,7 +9,9 @@ function tooltipGlobalSettings()
 		{
 			update_option("onlyFirstKeyword",$_POST['onlyFirstKeyword']);
 		}
-		tooltipsMessage("Changes saved."); //!!!
+		// version 3.4.9 tooltipsMessage("Changes saved."); //!!!
+		$tooltipsMessageString =  __( 'Changes saved.', 'wordpress-tooltips' );
+		tooltipsMessage($tooltipsMessageString);
 	}
 	
 	
@@ -21,7 +23,10 @@ function tooltipGlobalSettings()
 		{
 			update_option("enableTooltipsForImage",$_POST['enableTooltipsForImage']);
 		}
-		tooltipsMessage("Changes saved."); //!!!
+		// version 3.4.9
+		//tooltipsMessage("Changes saved."); //!!!
+		$tooltipsMessageString =  __( 'Changes saved.', 'wordpress-tooltips' );
+		tooltipsMessage($tooltipsMessageString);		
 	}
 
 	$enableTooltipsForImage = get_option("enableTooltipsForImage");
@@ -32,7 +37,10 @@ function tooltipGlobalSettings()
 		{
 			update_option("enableTooltipsForExcerpt",$_POST['enableTooltipsForExcerpt']);
 		}
-		tooltipsMessage("Changes saved."); //!!!
+		// version 3.4.9
+		//tooltipsMessage("Changes saved.");
+		$tooltipsMessageString =  __( 'Changes saved.', 'wordpress-tooltips' );
+		tooltipsMessage($tooltipsMessageString);		
 	}
 	$enableTooltipsForExcerpt = get_option("enableTooltipsForExcerpt");
 	if (empty($enableTooltipsForExcerpt)) $enableTooltipsForExcerpt = 'NO';
@@ -44,7 +52,10 @@ function tooltipGlobalSettings()
 		{
 			update_option("enableTooltipsForTags",$_POST['enableTooltipsForTag']);
 		}
-		tooltipsMessage("Changes saved."); //!!!
+		// version 3.4.9
+		//tooltipsMessage("Changes saved."); //!!!
+		$tooltipsMessageString =  __( 'Changes saved.', 'wordpress-tooltips' );
+		tooltipsMessage($tooltipsMessageString);
 	}
 	$enableTooltipsForTag = get_option("enableTooltipsForTags");
 	if (empty($enableTooltipsForTag)) $enableTooltipsForTag = 'NO';
@@ -53,7 +64,11 @@ function tooltipGlobalSettings()
 
 <div class="wrap">
 <div id="icon-options-general" class="icon32"><br></div>
-<h2>Tooltips Global Settings</h2>
+<?php
+// version 3.4.9
+//<h2>Tooltips Global Settings</h2>
+echo '<h2>' . __( 'Tooltips Global Settings', 'wordpress-tooltips' ) . '</h2>';
+?>
 </div>
 <div style='clear:both'></div>		
 		<div class="wrap">
@@ -64,7 +79,11 @@ function tooltipGlobalSettings()
 							<div class="postbox-container" style="width:90%;">
 								<div class="postbox">
 									<h3 class='hndle'><span>
-										Tooltip Keyword Matching Mode
+										<?php 
+										// version 3.4.9
+										// Tooltip Keyword Matching Mode
+										echo __( 'Tooltip Keyword Matching Mode', 'wordpress-tooltips' );
+										 ?>
 									</span>
 									</h3>
 								
@@ -84,7 +103,11 @@ function tooltipGlobalSettings()
 										  });
 										});
 										</script>
-										Keyword Matching Mode: <span class="question">?</span>
+										<?php
+										// version 3.4.9
+										// Keyword Matching Mode: <span class="question">?</span>
+										echo __( 'Keyword Matching Mode:', 'wordpress-tooltips' ).' <span class="question">?</span>';
+										?>
 										</td>
 										<td width="50%"  style="text-align:left;">
 										<select id="onlyFirstKeyword" name="onlyFirstKeyword" style="width:400px;">
@@ -93,7 +116,11 @@ function tooltipGlobalSettings()
 										</select>
 										</td>
 										<td width="25%"  style="text-align:left;">
-										<input type="submit" id="onlyFirstKeywordsetting" name="onlyFirstKeywordsetting" value=" Update Now ">
+										<?php
+										// version 3.4.9
+										// <input type="submit" id="onlyFirstKeywordsetting" name="onlyFirstKeywordsetting" value=" Update Now ">
+										?>
+										<input type="submit" id="onlyFirstKeywordsetting" name="onlyFirstKeywordsetting" value="<?php  echo __( ' Update Now ', 'wordpress-tooltips' ); ?>">
 										</td>
 										</tr>
 
@@ -121,7 +148,11 @@ function tooltipGlobalSettings()
 							<div class="postbox-container" style="width:90%;">
 								<div class="postbox">
 									<h3 class='hndle'><span>
-										Enable/Disable Tooltips For Image Setting<i> <font color='Gray'> (tooltips shown when mouse hover the image)</font></i>
+									<?php
+									// version 3.4.9
+									//	Enable/Disable Tooltips For Image Setting<i> <font color='Gray'> (tooltips shown when mouse hover the image)</font></i>
+									echo __( "Enable/Disable Tooltips For Image Setting", 'wordpress-tooltips' )."<i> <font color='Gray'> (".__('tooltips shown when mouse hover the image', 'wordpress-tooltips' ).')</font></i>';
+									?>
 									</span>
 									</h3>
 								
@@ -139,8 +170,12 @@ function tooltipGlobalSettings()
 										    jQuery("div.tooltip").remove();
 										  });
 										});
-										</script>										
-										Enable Image Tooltips: <span class="questionimage">?</span>
+										</script>
+										<?php
+										// version 3.4.9
+										//Enable Image Tooltips: <span class="questionimage">?</span>
+										echo __( 'Enable Image Tooltips: ', 'wordpress-tooltips' ).'<span class="questionimage">?</span>';
+										?>
 										</td>
 										<td width="50%"  style="text-align:left;">
 										<select id="enableTooltipsForImage" name="enableTooltipsForImage" style="width:400px;">
@@ -149,7 +184,11 @@ function tooltipGlobalSettings()
 										</select>
 										</td>
 										<td width="25%"  style="text-align:left;">
-										<input type="submit" id="enableTooltipsForImageSubmit" name="enableTooltipsForImageSubmit" value=" Update Now ">
+										<?php
+										// version 3.4.9
+										//<input type="submit" id="enableTooltipsForImageSubmit" name="enableTooltipsForImageSubmit" value=" Update Now ">
+										?>
+										<input type="submit" id="enableTooltipsForImageSubmit" name="enableTooltipsForImageSubmit" value="<?php echo __(' Update Now ', 'wordpress-tooltips'); ?>">
 										</td>
 										</tr>
 
@@ -178,7 +217,11 @@ function tooltipGlobalSettings()
 							<div class="postbox-container" style="width:90%;">
 								<div class="postbox">
 									<h3 class='hndle'><span>
-										Enable/Disable Tooltips For Post Excerpt<i> <font color='Gray'></font></i>
+									<?php
+									// version 3.4.9
+									//	Enable/Disable Tooltips For Post Excerpt<i> <font color='Gray'></font></i>
+									echo __( "Enable/Disable Tooltips For Post Excerpt", 'wordpress-tooltips' )."<i> <font color='Gray'></font></i>";
+									?>
 									</span>
 									</h3>
 								
@@ -197,7 +240,10 @@ function tooltipGlobalSettings()
 										  });
 										});
 										</script>										
-										Tooltips For Excerpt: <span class="questionexcerpt">?</span>
+										<?php
+										// Tooltips For Excerpt: <span class="questionexcerpt">?</span>
+										echo __( 'Tooltips For Excerpt: ', 'wordpress-tooltips' ).'<span class="questionexcerpt">?</span>';
+										?>
 										</td>
 										<td width="50%"  style="text-align:left;">
 										<select id="enableTooltipsForExcerpt" name="enableTooltipsForExcerpt" style="width:400px;">
@@ -206,10 +252,13 @@ function tooltipGlobalSettings()
 										</select>
 										</td>
 										<td width="25%"  style="text-align:left;">
-										<input type="submit" id="enableTooltipsForExcerptSubmit" name="enableTooltipsForExcerptSubmit" value=" Update Now ">
+										<?php
+										// version 3.4.9
+										// <input type="submit" id="enableTooltipsForExcerptSubmit" name="enableTooltipsForExcerptSubmit" value=" Update Now ">
+										?>
+										<input type="submit" id="enableTooltipsForExcerptSubmit" name="enableTooltipsForExcerptSubmit" value="<?php echo __( ' Update Now ', 'wordpress-tooltips' ); ?>">
 										</td>
 										</tr>
-
 										</table>
 										</form>
 										
@@ -236,10 +285,13 @@ function tooltipGlobalSettings()
 							<div class="postbox-container" style="width:90%;">
 								<div class="postbox">
 									<h3 class='hndle'><span>
-										Enable/Disable Tooltips For Post Tag<i> <font color='Gray'></font></i>
+									<?php
+									// version 3.4.9
+									//	Enable/Disable Tooltips For Post Tag<i> <font color='Gray'></font></i>
+									echo __( 'Enable/Disable Tooltips For Post Tag', 'wordpress-tooltips' )."<i> <font color='Gray'></font></i>";
+									?>
 									</span>
 									</h3>
-								
 									<div class="inside" style='padding-left:5px;'>
 										<form id="toolstipsform" name="toolstipsform" action="" method="POST">
 										<table id="toolstipstable" width="100%">
@@ -254,8 +306,12 @@ function tooltipGlobalSettings()
 										    jQuery("div.tooltip").remove();
 										  });
 										});
-										</script>										
-										Tooltips For Tag: <span class="questiontags">?</span>
+										</script>
+										<?php
+										// version 3.4.9
+										//Tooltips For Tag: <span class="questiontags">?</span>
+										echo __( 'Tooltips For Tag: ', 'wordpress-tooltips' ).'<span class="questiontags">?</span>';
+										?>
 										</td>
 										<td width="50%"  style="text-align:left;">
 										<select id="enableTooltipsForTag" name="enableTooltipsForTag" style="width:400px;">
@@ -264,7 +320,11 @@ function tooltipGlobalSettings()
 										</select>
 										</td>
 										<td width="25%"  style="text-align:left;">
-										<input type="submit" id="enableTooltipsForTagSubmit" name="enableTooltipsForTagSubmit" value=" Update Now ">
+										<?php
+										// version 3.4.9
+										//<input type="submit" id="enableTooltipsForTagSubmit" name="enableTooltipsForTagSubmit" value=" Update Now ">
+										?>
+										<input type="submit" id="enableTooltipsForTagSubmit" name="enableTooltipsForTagSubmit" value="<?php echo __( ' Update Now ', 'wordpress-tooltips' ); ?>">
 										</td>
 										</tr>
 
@@ -337,7 +397,10 @@ function editTooltips()
 				
 				update_option('tooltipsarray',$m_tooltipsArray);
 			}
-			tooltipsMessage("Tooltips Added.");
+			// version 3.4.9
+			// tooltipsMessage("Tooltips Added.");
+			$tooltipsMessageString =  __( 'Tooltips Added.', 'wordpress-tooltips' );
+			tooltipsMessage($tooltipsMessageString);
 		}
 		
 
@@ -362,7 +425,10 @@ function editTooltips()
 				$m_tooltipsArray[$m_toolstipskeywordsubmithideen]['content'] = $m_toolstipscontent;  
 				update_option('tooltipsarray',$m_tooltipsArray);
 			}
-			tooltipsMessage("Changes saved.");
+			// version 3.4.9
+			//tooltipsMessage("Changes saved.");
+			$tooltipsMessageString =  __( 'Changes saved.', 'wordpress-tooltips' );
+			tooltipsMessage($tooltipsMessageString);			
 		}
 
 		if (isset($_POST['toolstipskeywordsubmitdelete']))
@@ -373,7 +439,11 @@ function editTooltips()
 				array_splice($m_tooltipsArray,$m_toolstipskeywordsubmithideen,1);
 				update_option('tooltipsarray',$m_tooltipsArray);
 			}
-			tooltipsMessage("Tooltips Deleted.");
+			// version 3.4.9
+			//tooltipsMessage("Tooltips Deleted.");
+			$tooltipsMessageString =  __( 'Tooltips Deleted.', 'wordpress-tooltips' );
+			tooltipsMessage($tooltipsMessageString);
+
 		}
 				
 		echo "<br />";

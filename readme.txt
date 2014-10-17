@@ -2,17 +2,17 @@
 Contributors: zhuyi
 Author URI: http://tomas.zhu.bz/
 Donate link: http://tomas.zhu.bz/
-Tags:tooltip,hover,link,bubble,image,nextgen,next-gen,photo,picture,image,popup,phrase,glossary,video,radio,shortcode,tag,menu,excerpt,post
+Tags:tooltip,tooltips,glossary,dictionary,lexical,literal,verbal,keywords,terms,knowledge base,appendix,translate,content management,directory,knowledge management,reference,terminology,atlas,accent,bilingual,slang,index,listing,jargon,thesaurus,word stock,menu,wordbook,wordlist,archive,catalog,explain,explanation,explanatory,vocabulary,words,expression,expressed,tip,tool-tip,hover,hints,hint,popup,highlight,language,link,tip,bubble,image,nextgen,next-gen,photo,picture,image,automatic,phrase,index,video,radio,shortcode,tag,menu,excerpt,post,youtube,vimeo,mp3,mp4,encyclopaedia
 Requires at least: 2.0
 Tested up to: 4.0
-Stable tag: 3.4.7
+Stable tag: 3.4.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Wordpress tooltip appear custom hover box when the user hovers the pointer over an item, You can add tooltips for post title/content/excerpt/tags/archive/menu item/gallery..., You can add text,image,link,video,radio in tooltips, it is quick and pretty. 
 
 == Description ==
-Plugin Name: Wordpress Tooltips, works well on wordpress 4.0<br>
+Plugin Name: Wordpress Tooltips<br>
 Plugin Support URI: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/<br>
 
 <p><a href='http://tooltips.org' target='blank'>Upgrade to Pro Version</a></p>
@@ -111,6 +111,9 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 7. Tooltips Widget On Sidebar
 
 == Changelog ==
+= Version 3.4.9 =
+Followed wordpress l10n standard to support multi-Languages and more easier to translation to Dutch, French and so on.
+
 = Version 3.4.7 =
 In this version we can add tooltips widget to the sidebar. :)
 

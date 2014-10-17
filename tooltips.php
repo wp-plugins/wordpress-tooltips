@@ -3,9 +3,10 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.4.7
+Version: 3.4.9
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
+Text Domain: wordpress-tooltips
 License: GPL2
 */
 
@@ -538,6 +539,16 @@ add_shortcode( 'tooltipslist', 'tooltips_list_shortcode' );
 
 //version 3.4.7
 add_action('widgets_init', 'TooltipsWidgetInit');
+
+// version 3.4.9
+/**** localization ****/
+add_action('plugins_loaded','tooltips_load_textdomain');
+
+function tooltips_load_textdomain()
+{
+	load_plugin_textdomain('wordpress-tooltips', false, dirname( plugin_basename( __FILE__ ) ).'/languages/');
+}
+
 
 function footernav()
 {
