@@ -1,6 +1,5 @@
 <?php
 
-
 function tooltipGlobalSettings()
 {
 	if (isset($_POST['onlyFirstKeywordsetting']))
@@ -97,7 +96,7 @@ echo '<h2>' . __( 'Tooltips Global Settings', 'wordpress-tooltips' ) . '</h2>';
 										<script type="text/javascript"> 
 										jQuery(document).ready(function () {
 										  jQuery("span.question").hover(function () {
-										    jQuery(this).append('<div class="tooltip"><p>The option --  "Add tooltips to all matching keyword in the same page" means if you have many words which have tooltip content, all these words will show tooltip in the same page.</p><p>The option --  " Add tooltips to the first matching keyword in the same page" means if you have many words which have tooltip content, only the first matching word will show tooltip in the same page.</p></div>');
+										    jQuery(this).append('<div class="tooltip"><p>The option --  "Add tooltips to all matching keyword in the same page" means if you have many matched words which have tooltip content, all these words will show related tooltip in the same page.</p><p>The option --  " Add tooltips to the first matching keyword in the same page" means if you have many matched words which have tooltip content, only the first matching word will show related tooltip in the same page.</p></div>');
 										  }, function () {
 										    jQuery("div.tooltip").remove();
 										  });
@@ -234,9 +233,9 @@ echo '<h2>' . __( 'Tooltips Global Settings', 'wordpress-tooltips' ) . '</h2>';
 										<script type="text/javascript"> 
 										jQuery(document).ready(function () {
 										  jQuery("span.questionexcerpt").hover(function () {
-										    jQuery(this).append('<div class="tooltip"><p>The option --  "Enable Tooltips For Post Excerpt" means show tooltips in your post excerpt</p><p>The option --  "    Disable Tooltips For Post Excerpt " means do not show tooltips in your post excerpt</p><p>This option is helpful for some advance themes</p></div>');
+										    jQuery(this).append('<div class="tooltip3"><p>The option --  "Enable Tooltips For Post Excerpt" means show tooltips in your post excerpt</p><p>The option --  "    Disable Tooltips For Post Excerpt " means do not show tooltips in your post excerpt</p><p>This option is helpful for some advance themes</p></div>');
 										  }, function () {
-										    jQuery("div.tooltip").remove();
+										    jQuery("div.tooltip3").remove();
 										  });
 										});
 										</script>										
@@ -301,9 +300,9 @@ echo '<h2>' . __( 'Tooltips Global Settings', 'wordpress-tooltips' ) . '</h2>';
 										<script type="text/javascript"> 
 										jQuery(document).ready(function () {
 										  jQuery("span.questiontags").hover(function () {
-										    jQuery(this).append('<div class="tooltip"><p>The option --  "Enable Tooltips For Post Tag" means show tooltips on your post tags</p><p>The option --  "    Disable Tooltips For Post Tag " means do not show tooltips on your post tags</p></div>');
+										    jQuery(this).append('<div class="tooltip1"><p>The option --  "Enable Tooltips For Post Tag" means show tooltips on your post tags</p><p>The option --  "    Disable Tooltips For Post Tag " means do not show tooltips on your post tags</p></div>');
 										  }, function () {
-										    jQuery("div.tooltip").remove();
+										    jQuery("div.tooltip1").remove();
 										  });
 										});
 										</script>

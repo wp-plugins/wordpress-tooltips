@@ -3,13 +3,12 @@
 Plugin Name: Tooltips
 Plugin URI:  http://tomas.zhu.bz/wordpress-plugin-tooltips.html
 Description: Wordpress Tooltips,You can add text,image,link,video,radio in tooltips, add tooltips in gallery. More amazing features? Do you want to customize a beautiful style for your tooltips? Get <a href='http://tooltips.org' target='blank'>Wordpress Tooltips Pro</a> now.
-Version: 3.5.1
+Version: 3.5.3
 Author: Tomas Zhu: <a href='http://tooltips.org' target='_blank'>Tooltips Pro</a>
 Author URI: http://tomas.zhu.bz
 Text Domain: wordpress-tooltips
 License: GPL2
 */
-
 /*  Copyright 2011 Tomas.Zhu (email : expert2wordpress@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
@@ -25,7 +24,6 @@ License: GPL2
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-
 error_reporting(0);
 require_once("tooltipsfunctions.php");
 function tooltipsHead()
@@ -305,7 +303,6 @@ span.questiontags:hover { background-color: #21759b; }
 div.tooltip {
   text-align: left;
   left: 25px;
-  top: -55px;
   background: #21759b;
   color: #fff;
   position: absolute;
@@ -314,8 +311,36 @@ div.tooltip {
   border-radius: 5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
+top: -80px;
 }
-div.tooltip:before {
+
+div.tooltip1 {
+  text-align: left;
+  left: 25px;
+  background: #21759b;
+  color: #fff;
+  position: absolute;
+  z-index: 1000000;
+  width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+top: -50px;
+}
+div.tooltip3 {
+  text-align: left;
+  left: 25px;
+  background: #21759b;
+  color: #fff;
+  position: absolute;
+  z-index: 1000000;
+  width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+top: -60px;
+}
+div.tooltip:before, .tooltip1:before, .tooltip3:before {
   border-color: transparent #21759b transparent transparent;
   border-right: 6px solid #21759b;
   border-style: solid;
@@ -329,9 +354,11 @@ div.tooltip:before {
   top: 40%;
   left: -6px;
 }
-div.tooltip p {
+div.tooltip p, .tooltip1 p, .tooltip3 p {
   margin: 10px;
-  color: #fff;
+ line-height:13px;
+ font-size:11px;
+ color:#eee; 
 }
 </style>										
 <?php
