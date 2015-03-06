@@ -37,9 +37,13 @@
   			});
   			navbar = '<div class="navitems">' + navbar + '</div>';
 			$currentthis.prepend(navbar);
-			
+			$('.navitem').css('color','#007DBD');
 			$('.navitem').click(function()
 			{
+				$('.navitem').css('background','#fff');
+				$(this).css('background','#007DBD');
+				$('.navitem').css('color','#007DBD');
+				$(this).css('color','#fff');
 				$currentcheck = $(this);
 				$clickedAlpha = $.trim($(this).text()).toLowerCase();
 				$($currentthis).find('span').each(function()
@@ -48,6 +52,7 @@
 					if ($clickedAlpha == alpha)
 					{
 						$(this).css('display','inline-block');
+						
 					}
 					else
 					{

@@ -1,6 +1,6 @@
 .navitem
 {
-
+font-family: Helvetica, Georgia, serif;
 }
 
 .navitems a
@@ -8,18 +8,24 @@
 text-align: center;
 border: #ddd solid 1px;
 text-decoration: none;
-min-width: 20px;
-padding: 2px;
-margin-right: 8px;
-margin-bottom: 16px;
-margin-top: 16px;
-color: #1880d0 !important;
+
+color: #1880d0;
+margin-right: 5px;
+margin-bottom: 5px;
+padding: 5px 10px;
+font-family: Helvetica, Georgia, serif !important;
+display: inline-block;
+text-shadow: none;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+font-weight: bold;
 }
 
 .navitems a:hover
 {
 color: white !important;
-background: #007DBD;
+background: #007DBD !important; 
 }
 
 .tooltips_list
