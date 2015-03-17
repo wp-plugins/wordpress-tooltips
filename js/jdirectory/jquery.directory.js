@@ -8,7 +8,7 @@
  * http://www.gnu.org/licenses/gpl.html
  *
  * Launch  : June 2014
- * Version : 1.0.0
+ * Version : 1.0.5
  * Released: 10 June, 2014 - 00:00
  * 
  */
@@ -40,6 +40,8 @@
 			$('.navitem').css('color','#007DBD');
 			$('.navitem').click(function()
 			{
+				$('.navitem').css('font-size','16px');
+				$(this).css('font-size','25px');
 				$('.navitem').css('background','#fff');
 				$(this).css('background','#007DBD');
 				$('.navitem').css('color','#007DBD');
