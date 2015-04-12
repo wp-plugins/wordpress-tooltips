@@ -8,7 +8,7 @@
  * http://www.gnu.org/licenses/gpl.html
  *
  * Launch  : June 2014
- * Version : 1.0.5
+ * Version : 1.1.0
  * Released: 10 June, 2014 - 00:00
  * 
  */
@@ -32,8 +32,28 @@
 				$(this).data('alpha',firstAlpha);
 			});
 			var navbar = '<a class="navitem allDirectory" href="#">ALL</a>';
-			$.each(defaults.navigation, function(i,val){
-			navbar = navbar + '<a class="navitem '+val+'" href="#">'+val.toUpperCase()+'</a>';
+			$.each(defaults.navigation, function(i,val)
+			{
+				//navbar = navbar + '<a class="navitem '+val+'" href="#">'+val.toUpperCase()+'</a>';
+				var ttt = $('.tooltips_list > span');
+				var countstore = 0;
+				$.each(ttt,function()
+				{
+					$nowval = $(this);
+					var alphacount = $($nowval).data('alpha');
+					if (val == alphacount)
+					{
+						countstore = countstore + 1;
+					}
+				}
+				)
+				if (countstore == 0 ) 
+				{
+					navbar = navbar + '<a class="navitem '+val+'" data-counter='+countstore+' href="#">'+val.toUpperCase()+'</a>';	
+				}
+				else {
+				navbar = navbar + '<a class="navitem '+val+' href="#">'+val.toUpperCase()+'<span class="tooltiplist_count">'+countstore+'</span></a>';
+				}
   			});
   			navbar = '<div class="navitems">' + navbar + '</div>';
 			$currentthis.prepend(navbar);
@@ -48,19 +68,23 @@
 				$(this).css('color','#fff');
 				$currentcheck = $(this);
 				$clickedAlpha = $.trim($(this).text()).toLowerCase();
+				$clickedAlphaFirst = $clickedAlpha.charAt(0);
+
 				$($currentthis).find('span').each(function()
 				{
 					var alpha = $(this).data('alpha');
-					if ($clickedAlpha == alpha)
+					
+					if ($clickedAlphaFirst == alpha)
 					{
 						$(this).css('display','inline-block');
-						
+						$('.tooltiplist_count').css('display','inline-block');
 					}
 					else
 					{
 						$(this).css('display','none');
+						$('.tooltiplist_count').css('display','inline-block');
 					}
-					
+
 					if ($clickedAlpha == 'all')
 					{
 						$(this).css('display','inline-block');

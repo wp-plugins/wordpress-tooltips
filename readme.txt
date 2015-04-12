@@ -5,7 +5,7 @@ Donate link: http://tomas.zhu.bz/
 Tags:tooltip,tooltips,glossary,dictionary,lexical,literal,verbal,keywords,terms,knowledge base,appendix,translate,content management,directory,knowledge management,reference,terminology,atlas,accent,bilingual,slang,index,listing,jargon,thesaurus,word stock,menu,wordbook,wordlist,archive,catalog,explain,explanation,explanatory,vocabulary,words,expression,expressed,tip,tool-tip,hover,hints,hint,popup,highlight,language,link,tip,bubble,image,nextgen,next-gen,photo,picture,image,automatic,phrase,index,video,radio,shortcode,tag,menu,excerpt,post,youtube,vimeo,mp3,mp4,encyclopaedia
 Requires at least: 2.0
 Tested up to: 4.1.1
-Stable tag: 3.5.7
+Stable tag: 3.5.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,8 @@ Since version 3.4.3 we support tooltips shortcode, copy [tooltipslist] in your p
 Since version 3.4.5 we developed our original jQuery plugin which allow use shortcode [tooltipslist] as a glossary.
 
 Since version 3.4.7 users can add tooltips widget on the sidebar. :)
+
+Since 3.5.9 in our orginal jQuery plugin, we will show the numerical count above each letter in glossary / list
 
 <h4>Features of Wordpress Tooltips Pro:</h4>
 
@@ -94,8 +96,8 @@ More amazing features are being developed and you can upgrade unlimited.
 we will use the title of the post as the keyword of your tooltips, and use the content of the post as the content of your tooltips, for example: If you use "wordpress" as post title, and use "we love wordpress" as the 
 post content, when users view your post, they will find the word "wordpress" with a dotted line under it, and when user move over the word "wordpress", the tooltip box will popup and show the tooltip content "we love wordpress"
 4: You can setting your tooltips in Tooltips Global Settings page at admin area, for example you can choose " Add tooltips to all matching keyword in the same page " or " Add tooltips to the first matching keyword in the same page" and so on
-
-1, 2, 3, 4: You're done!
+5: If you want to show glossary / list, just insert shortcode [tooltipslist] into your page or post.
+1, 2, 3, 4, 5: You're done!
 
 == Frequently Asked Questions ==
 FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
@@ -111,6 +113,9 @@ FAQs can be found here: http://tomas.zhu.bz/wordpress-plugin-tooltips.html/
 7. Tooltips Widget On Sidebar
 
 == Changelog ==
+= Version 3.5.9 =
+show the numerical count above each letter in glossary / list
+
 = Version 3.5.7 =
 More pretty glossary
 
@@ -244,8 +249,8 @@ only setting it one time when upload an image on wordpress editor panel
 * General code clean up
 
 == Upgrade Notice ==
-= Version 3.2.9 =
-support show tooltips in excerpt too.
+= Version 3.5.9 =
+show the numerical count above each letter in glossary / list
 
 == Download ==
 http://wordpress.org/extend/plugins/wordpress-tooltips/
