@@ -4,7 +4,7 @@ Author URI: http://tomas.zhu.bz/
 Donate link: http://tomas.zhu.bz/
 Tags:tooltip,tooltips,glossary,dictionary,lexical,literal,verbal,keywords,terms,knowledge base,appendix,translate,content management,directory,knowledge management,reference,terminology,atlas,accent,bilingual,slang,index,listing,jargon,thesaurus,word stock,menu,wordbook,wordlist,archive,catalog,explain,explanation,explanatory,vocabulary,words,expression,expressed,tip,tool-tip,hover,hints,hint,popup,highlight,language,link,tip,bubble,image,nextgen,next-gen,photo,picture,image,automatic,phrase,index,video,radio,shortcode,tag,menu,excerpt,post,youtube,vimeo,mp3,mp4,encyclopaedia
 Requires at least: 2.0
-Tested up to: 4.1.1
+Tested up to: 4.2.0
 Stable tag: 3.5.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
